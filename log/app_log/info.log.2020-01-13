@@ -1,0 +1,9 @@
+13-01-20 19:35:03,107 148 0    [main] ERROR springboot.hbn.home.TblAccountsHome  - get failed
+org.hibernate.TypeMismatchException: Provided id of the wrong type for class springboot.hbn.entities.TblAccounts. Expected: class java.math.BigDecimal, got class java.lang.Integer
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:134)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1070)
+	at org.hibernate.internal.SessionImpl.access$2000(SessionImpl.java:176)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2551)
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:955)
+	at springboot.hbn.home.BaseHibernateHome.findById(BaseHibernateHome.java:250)
+	at springboot.hbn.home.TblAccountsHome.main(TblAccountsHome.java:452)

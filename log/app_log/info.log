@@ -1,0 +1,155 @@
+26-08-21 16:51:04,559 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 16:51:07,584 88 3025 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:51:24,247 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 16:51:28,558 88 4311 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:54:09,815 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 16:54:14,565 88 4750 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:55:26,209 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 16:55:30,272 88 4063 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:56:31,818 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 16:56:35,193 88 3375 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:57:30,032 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 16:57:32,205 88 2173 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Could not connect to SMTP host: localhost, port: 465;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1961)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at java.net.Socket.connect(Socket.java:555)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:299)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:234)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 8 more
+26-08-21 16:59:09,848 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 16:59:13,222 88 3374 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 17:00:17,556 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 17:00:58,436 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 17:01:02,428 88 3992 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 17:21:42,841 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 17:21:47,293 88 4452 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 18:35:47,400 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 18:35:49,518 40 2118 [main] INFO  springboot.utils.EmailProcessExchange  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn
+26-08-21 18:38:49,913 40 0    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 18:38:52,879 40 2966 [main] INFO  springboot.utils.EmailProcessExchange  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn
+26-08-21 18:38:52,881 40 2968 [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 18:38:53,259 40 3346 [main] INFO  springboot.utils.EmailProcessExchange  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn
+26-08-21 18:38:53,262 40 3349 [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 18:38:53,637 40 3724 [main] INFO  springboot.utils.EmailProcessExchange  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn
+26-08-21 19:31:28,883 40 1    [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 19:31:31,611 40 2729 [main] INFO  springboot.utils.EmailProcessExchange  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn
+26-08-21 19:31:31,613 40 2731 [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 19:31:32,170 40 3288 [main] INFO  springboot.utils.EmailProcessExchange  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn
+26-08-21 19:31:32,173 40 3291 [main] INFO  springboot.utils.EmailProcessExchange  - dang gui email
+26-08-21 19:31:32,726 40 3844 [main] INFO  springboot.utils.EmailProcessExchange  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn

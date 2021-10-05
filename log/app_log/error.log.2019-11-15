@@ -1,0 +1,16 @@
+15-11-19 13:48:54,182 88 514  [main] FATAL springboot.MainBussiness  - importListBillReq
+java.lang.NumberFormatException: For input string: "{""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at springboot.utils.Commons.hexToBytes(Commons.java:168)
+	at nh.Encript.TripleDES.decrypt(TripleDES.java:76)
+	at springboot.MainBussiness.updateTransactionStatus(MainBussiness.java:1925)
+	at springboot.Controller.handleCoreRequest(Controller.java:162)
+	at springboot.Controller.testCoreFunction(Controller.java:241)
+	at springboot.Controller.main(Controller.java:438)
+15-11-19 15:22:01,626 88 694  [main] FATAL springboot.MainBussiness  - getUserInfo
+java.lang.NullPointerException
+	at springboot.MainBussiness.getUserInfo(MainBussiness.java:459)
+	at springboot.Controller.handleRequest(Controller.java:91)
+	at springboot.Controller.testMobileFunction(Controller.java:308)
+	at springboot.Controller.main(Controller.java:443)

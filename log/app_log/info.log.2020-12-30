@@ -1,0 +1,6 @@
+29-12-20 09:43:11,886 40 0    [main] INFO  springboot.utils.EmailProcess  - RECEIPIENT INVALIDnull
+29-12-20 09:43:11,899 40 13   [main] INFO  springboot.utils.EmailProcess  - dang gui email
+29-12-20 09:43:16,152 40 4266 [main] INFO  springboot.utils.EmailProcess  - gui email thanh cong toi danh sach: huyvd@imediatech.com.vn
+29-12-20 09:43:36,492 40 0    [main] INFO  springboot.utils.EmailProcess  - RECEIPIENT INVALIDnull
+29-12-20 09:43:36,504 40 12   [main] INFO  springboot.utils.EmailProcess  - dang gui email
+29-12-20 09:43:40,401 40 3909 [main] INFO  springboot.utils.EmailProcess  - gui email thanh cong toi danh sach: huyvd@imediatech.com.vn

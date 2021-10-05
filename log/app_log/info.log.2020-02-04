@@ -1,0 +1,156 @@
+04-02-20 15:12:15,327 40 0    [main] INFO  springboot.utils.Commons  - total post:	{
+		"type": 2,
+		"size": 1,
+		"requestId": "1580803934364",
+		"requestTime": "2020-02-35 15:12:14",
+		"partnerName": "svc_dev",
+		"signature": "SYMkDUFu12rnGsdYrIH7EHDC1jtfOVI0MhR+zS9ACdgespDiuHMIx1UYv7Ap18svXXrenNFwkDSi90McA8LNZBrojL9cwv/GsvHERO3Ddk0qQkh4nChRI2Qw0XjscIJHhJlgFS1fgZnH/sYzd6r0+2MO8MBaa3CDGT/TEHRNCEk=",
+		"desc": null,
+		"data": [
+			{
+				"contractId": "123234",
+				"identCard": null,
+				"accountNumber": null,
+				"customerName": "DO ANH VIET",
+				"brithDay": null,
+				"description": null,
+				"status": null,
+				"paymentType": "0",
+				"requireAmount": "0",
+				"requiredDay": null,
+				"totalAmount": null,
+				"totalTimes": null
+			}
+		]
+	}(323)
+ Ret>>>{"responseCode":200,"responseMessage":"Success","data":[{"contractId":"123234","accountNumber":"7777701474258","customerName":"DO ANH VIET","brithDay":"","requireAmount":"0","status":"1","paymentType":"0","totalAmount":"0","totalTimes":"0"}]}
+04-02-20 15:12:15,334 40 7    [main] INFO  springboot.SSOBussiness  - DANG KY VA:	{
+		"type": 2,
+		"size": 1,
+		"requestId": "1580803934364",
+		"requestTime": "2020-02-35 15:12:14",
+		"partnerName": "svc_dev",
+		"signature": "SYMkDUFu12rnGsdYrIH7EHDC1jtfOVI0MhR+zS9ACdgespDiuHMIx1UYv7Ap18svXXrenNFwkDSi90McA8LNZBrojL9cwv/GsvHERO3Ddk0qQkh4nChRI2Qw0XjscIJHhJlgFS1fgZnH/sYzd6r0+2MO8MBaa3CDGT/TEHRNCEk=",
+		"desc": null,
+		"data": [
+			{
+				"contractId": "123234",
+				"identCard": null,
+				"accountNumber": null,
+				"customerName": "DO ANH VIET",
+				"brithDay": null,
+				"description": null,
+				"status": null,
+				"paymentType": "0",
+				"requireAmount": "0",
+				"requiredDay": null,
+				"totalAmount": null,
+				"totalTimes": null
+			}
+		]
+	}
+04-02-20 15:12:15,334 40 7    [main] INFO  springboot.SSOBussiness  - DANG KY RS:{"responseCode":200,"responseMessage":"Success","data":[{"contractId":"123234","accountNumber":"7777701474258","customerName":"DO ANH VIET","brithDay":"","requireAmount":"0","status":"1","paymentType":"0","totalAmount":"0","totalTimes":"0"}]}
+04-02-20 15:13:34,686 40 0    [main] INFO  springboot.utils.Commons  - total post:	{
+		"type": 2,
+		"size": 1,
+		"requestId": "1580804014138",
+		"requestTime": "2020-02-35 15:13:34",
+		"partnerName": "svc_dev",
+		"signature": "wiJpQgN1Ivq7K7zmxX5PPRDapm8Hn3UdO9edgIplC1HoQ1VKy130EL/3rEDd+bQaDKQ8ohcphnUwcQg7SDFBUOiMYRcnLRGGiH9fF8bVf9PcctICxvE2OLeJeyCdlhs8szegsNnL3TW5putzTDq6wge1yVmWHoomA/mQgfukx2M=",
+		"desc": null,
+		"data": [
+			{
+				"contractId": "1232347",
+				"identCard": null,
+				"accountNumber": null,
+				"customerName": "CONG TY CP CONG NGHE IMEDIA",
+				"brithDay": null,
+				"description": null,
+				"status": null,
+				"paymentType": "0",
+				"requireAmount": "0",
+				"requiredDay": null,
+				"totalAmount": null,
+				"totalTimes": null
+			}
+		]
+	}(193)
+ Ret>>>{"responseCode":200,"responseMessage":"Success","data":[{"contractId":"1232347","accountNumber":"7777700305724","customerName":"CONG TY CP CONG NGHE IMEDIA","brithDay":"","requireAmount":"0","status":"1","paymentType":"0","totalAmount":"0","totalTimes":"0"}]}
+04-02-20 15:13:34,710 40 24   [main] INFO  springboot.SSOBussiness  - DANG KY VA:	{
+		"type": 2,
+		"size": 1,
+		"requestId": "1580804014138",
+		"requestTime": "2020-02-35 15:13:34",
+		"partnerName": "svc_dev",
+		"signature": "wiJpQgN1Ivq7K7zmxX5PPRDapm8Hn3UdO9edgIplC1HoQ1VKy130EL/3rEDd+bQaDKQ8ohcphnUwcQg7SDFBUOiMYRcnLRGGiH9fF8bVf9PcctICxvE2OLeJeyCdlhs8szegsNnL3TW5putzTDq6wge1yVmWHoomA/mQgfukx2M=",
+		"desc": null,
+		"data": [
+			{
+				"contractId": "1232347",
+				"identCard": null,
+				"accountNumber": null,
+				"customerName": "CONG TY CP CONG NGHE IMEDIA",
+				"brithDay": null,
+				"description": null,
+				"status": null,
+				"paymentType": "0",
+				"requireAmount": "0",
+				"requiredDay": null,
+				"totalAmount": null,
+				"totalTimes": null
+			}
+		]
+	}
+04-02-20 15:13:34,711 40 25   [main] INFO  springboot.SSOBussiness  - DANG KY RS:{"responseCode":200,"responseMessage":"Success","data":[{"contractId":"1232347","accountNumber":"7777700305724","customerName":"CONG TY CP CONG NGHE IMEDIA","brithDay":"","requireAmount":"0","status":"1","paymentType":"0","totalAmount":"0","totalTimes":"0"}]}
+04-02-20 15:26:41,680 40 0    [main] INFO  springboot.utils.Commons  - total post:	{
+		"type": 3,
+		"size": 1,
+		"requestId": "1580804800986",
+		"requestTime": "2020-02-35 15:26:40",
+		"partnerName": "svc_dev",
+		"signature": "vV13TgqDdBuLjZ+0WY1XoOK62Be2nqcUZP/7mEz4SQ5deglp2rHBJFK6jnXNKhVnQ21XhCoWI+BCQ93as/8f6ZHgtEes8j5rMMwCpqkUkui4Z5JvTwpnRjl77r3KVmKf/VtpY+I8Nt5lxJfVHZVe8e0zGNfhxV1euFg3A2Wu5Mg=",
+		"desc": null,
+		"data": [
+			{
+				"contractId": "1232347",
+				"identCard": null,
+				"accountNumber": "77777001234568",
+				"customerName": "CONG TY CP CONG NGHE IMEDIA2",
+				"brithDay": null,
+				"description": null,
+				"status": null,
+				"paymentType": "0",
+				"requireAmount": "0",
+				"requiredDay": null,
+				"totalAmount": null,
+				"totalTimes": null
+			}
+		]
+	}(239)
+ Ret>>>{"responseCode":200,"responseMessage":"Success","data":[{"contractId":"1232347","accountNumber":"77777001234568","customerName":"CONG TY CP CONG NGHE IMEDIA2","brithDay":"","requireAmount":"0","status":"1","paymentType":"0","totalAmount":"0","totalTimes":"0"}]}
+04-02-20 15:26:41,685 40 5    [main] INFO  springboot.SSOBussiness  - DANG KY VA:	{
+		"type": 3,
+		"size": 1,
+		"requestId": "1580804800986",
+		"requestTime": "2020-02-35 15:26:40",
+		"partnerName": "svc_dev",
+		"signature": "vV13TgqDdBuLjZ+0WY1XoOK62Be2nqcUZP/7mEz4SQ5deglp2rHBJFK6jnXNKhVnQ21XhCoWI+BCQ93as/8f6ZHgtEes8j5rMMwCpqkUkui4Z5JvTwpnRjl77r3KVmKf/VtpY+I8Nt5lxJfVHZVe8e0zGNfhxV1euFg3A2Wu5Mg=",
+		"desc": null,
+		"data": [
+			{
+				"contractId": "1232347",
+				"identCard": null,
+				"accountNumber": "77777001234568",
+				"customerName": "CONG TY CP CONG NGHE IMEDIA2",
+				"brithDay": null,
+				"description": null,
+				"status": null,
+				"paymentType": "0",
+				"requireAmount": "0",
+				"requiredDay": null,
+				"totalAmount": null,
+				"totalTimes": null
+			}
+		]
+	}
+04-02-20 15:26:41,685 40 5    [main] INFO  springboot.SSOBussiness  - DANG KY RS:{"responseCode":200,"responseMessage":"Success","data":[{"contractId":"1232347","accountNumber":"77777001234568","customerName":"CONG TY CP CONG NGHE IMEDIA2","brithDay":"","requireAmount":"0","status":"1","paymentType":"0","totalAmount":"0","totalTimes":"0"}]}

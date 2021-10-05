@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+	<bean id="LogManager" class="springboot.logs.Logs" scope="prototype"></bean>
+
+	<!-- <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+		<property name="poolName" value="springHikariCP" />
+		<property name="connectionTestQuery" value="select 1 from dual" />
+		<property name="dataSourceClassName" value="oracle.jdbc.pool.OracleDataSource" />
+		<property name="maximumPoolSize" value="20" />
+		<property name="idleTimeout" value="30000" />
+		<property name="maxLifetime" value="0" />
+		<property name="connectionTimeout" value="30000" />
+		<property name="validationTimeout" value="10000" />
+		<property name="dataSourceProperties">
+			<props>
+				<prop key="url">jdbc:oracle:thin:@192.168.100.180:1521:DB11G</prop>
+				<prop key="user">SINGLE_SIGN_ON</prop>
+				<prop key="password">SINGLE_SIGN_ON</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="dataSourceHikari" class="com.zaxxer.hikari.HikariDataSource"
+		destroy-method="close">
+		<constructor-arg ref="hikariConfig" />
+	</bean> -->
+
+
+	<!-- <bean id="hibernate4AnnotatedSessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSourceHikari" />
+		<property name="packagesToScan" value="springboot.hbn.entities" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.connection.SetBigStringTryClob">true</prop>
+				<prop key="hibernate.jdbc.batch_size">0</prop>
+				<prop key="hibernate.cache.use_query_cache">false</prop>
+			</props>
+		</property>
+	</bean> -->
+</beans>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="gwcard_database">
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.100.180:1521:DB11G</property>
+		<property name="hibernate.connection.password">SINGLE_SIGN_ON</property>
+		<property name="hibernate.connection.username">SINGLE_SIGN_ON</property>
+		<property name="hibernate.default_schema">SINGLE_SIGN_ON</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="hibernate.c3p0.testConnectionOnCheckin">true</property>
+		<property name="hibernate.c3p0.preferredTestQuery">SELECT 1 FROM DUAL</property>
+		<property name="hibernate.c3p0.acquire_increment">1</property>
+		<property name="hibernate.c3p0.idle_test_period">1500</property>
+		<property name="hibernate.c3p0.max_size">100</property>
+		<property name="hibernate.c3p0.max_statements">50</property>
+		<property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.timeout">30</property>
+		<property name="hibernate.c3p0.maxIdleTime">1800</property>
+		<property name="hibernate.c3p0.numHelperThreads">3</property>
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		<property name="hibernate.search.autoregister_listeners">false</property>
+		<property name="hibernate.connection.release_mode">auto</property>
+		<property name="hibernate.connection.autocommit">true</property>
+		<property name="show_sql">false</property>
+		<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="hibernate.transaction.auto_close_session">true</property>
+	</session-factory>
+</hibernate-configuration>

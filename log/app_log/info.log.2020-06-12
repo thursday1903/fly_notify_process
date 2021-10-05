@@ -1,0 +1,919 @@
+12-06-20 10:41:49,208 40 0    [main] INFO  springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$643add37  - -----------_START SSO SERVER INSTANCE SUCCESS AT----------Fri Jun 12 10:41:49 ICT 2020
+12-06-20 10:42:01,446 40 12238 [http-nio-8084-exec-2] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 10:42:01,452 40 12244 [http-nio-8084-exec-2] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "37fed6f2d36be949baf067c02f5b3a66352b0dcfc9ad96a53a12ffe0c244c17879ef8463ac7fbac961b1d9d102856bbbfcbd714df2edd27d3bdc22563660b5b49f2f7207c51a48c648392428fc8da70110aa5eb8946c63c9ca39a5a1510b7c21b2e0a46fcf9b8891ce81a844923d93d3845159d477ad368c8b0fed74e34a464eab81415175df3cae1a0b6f4ec2492b9208b0a794cc572e9403c5c6a6e0b826b4daaed8599de46a64402c858ac5f85e38",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]
+12-06-20 10:42:03,206 40 13998 [http-nio-8084-exec-2] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={  "balChangeType": 0,  "balChangeStatus": 0,  "balChangeAmount": 101000,  "createdBy": "0985023151",  "accId": 910,  "client_request_id":202006091643581231231231335356}
+12-06-20 10:42:03,212 88 14004 [http-nio-8084-exec-2] FATAL springboot.hbn.home.TblAccountsHome  - find by findUserByPassword failed
+java.lang.NullPointerException
+	at springboot.hbn.home.TblAccountsHome.findUserByPassword(TblAccountsHome.java:43)
+	at springboot.SSOBussiness.loginUserPass(SSOBussiness.java:281)
+	at springboot.Controller.handleServiceRequest(Controller.java:79)
+	at springboot.Controller.servicepost(Controller.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+12-06-20 10:42:03,223 88 14015 [http-nio-8084-exec-2] FATAL springboot.SSOBussiness  - login fatal
+java.lang.NullPointerException
+	at springboot.hbn.home.TblAccountsHome.findUserByPassword(TblAccountsHome.java:43)
+	at springboot.SSOBussiness.loginUserPass(SSOBussiness.java:281)
+	at springboot.Controller.handleServiceRequest(Controller.java:79)
+	at springboot.Controller.servicepost(Controller.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+12-06-20 10:42:03,247 40 14039 [http-nio-8084-exec-2] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "37fed6f2d36be949baf067c02f5b3a66352b0dcfc9ad96a53a12ffe0c244c17879ef8463ac7fbac961b1d9d102856bbbfcbd714df2edd27d3bdc22563660b5b49f2f7207c51a48c648392428fc8da70110aa5eb8946c63c9ca39a5a1510b7c21b2e0a46fcf9b8891ce81a844923d93d3845159d477ad368c8b0fed74e34a464eab81415175df3cae1a0b6f4ec2492b9208b0a794cc572e9403c5c6a6e0b826b4daaed8599de46a64402c858ac5f85e38",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]:[{"p_code":1100,"data":"37fed6f2d36be949baf067c02f5b3a66352b0dcfc9ad96a53a12ffe0c244c17879ef8463ac7fbac961b1d9d102856bbbfcbd714df2edd27d3bdc22563660b5b49f2f7207c51a48c648392428fc8da70110aa5eb8946c63c9ca39a5a1510b7c21b2e0a46fcf9b8891ce81a844923d93d3845159d477ad368c8b0fed74e34a464eab81415175df3cae1a0b6f4ec2492b9208b0a794cc572e9403c5c6a6e0b826b4daaed8599de46a64402c858ac5f85e38","response_identify":"189390d26ead49cf82a1819fb11a40d822809","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:44:46,619 40 0    [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 10:44:46,624 40 5    [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1400,"data":"1f9290ea4d000e4e791d1d7d0bf09460957e4bbe3708a57e3d0c2cfc965cd112786f8298248f9168bb3bda670ebb3935b0d996dc6ef80e15303ea65eca762d30db91c2c2c067018f957019544ea4f5f61ebe36748517c3c33d1107b6ba432aefcba90c818c85ee248c45944c1c6bc13ad7f8066323503448e554c2695803355784b95e26d8f32bd1172dc8ce62a7a73701fc86ce3f8dc8838616cb4c3b8cadc955c551ecb570be1dc34f86b88d0bd5b0d4adf54fc0475c8039d67f782e10c8c2133612c89607f0e5fa5866dcc47919799430324408f90ee9","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:44:46,930 40 311  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"account_epurse_id":0,"acc_identify":"0933045719","display_name":"Amokachi","acc_pwd":"123123","cell_phone":"0933045719","acc_email":"vietda@imediatech.com.vn","login_from":0,"acc_status":0,"receive_notify":1}
+12-06-20 10:44:47,046 40 427  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1400,"data":"1f9290ea4d000e4e791d1d7d0bf09460957e4bbe3708a57e3d0c2cfc965cd112786f8298248f9168bb3bda670ebb3935b0d996dc6ef80e15303ea65eca762d30db91c2c2c067018f957019544ea4f5f61ebe36748517c3c33d1107b6ba432aefcba90c818c85ee248c45944c1c6bc13ad7f8066323503448e554c2695803355784b95e26d8f32bd1172dc8ce62a7a73701fc86ce3f8dc8838616cb4c3b8cadc955c551ecb570be1dc34f86b88d0bd5b0d4adf54fc0475c8039d67f782e10c8c2133612c89607f0e5fa5866dcc47919799430324408f90ee9","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1400,"data":"1f9290ea4d000e4e791d1d7d0bf09460957e4bbe3708a57e3d0c2cfc965cd112786f8298248f9168bb3bda670ebb3935b0d996dc6ef80e15303ea65eca762d30db91c2c2c067018f957019544ea4f5f61ebe36748517c3c33d1107b6ba432aefcba90c818c85ee248c45944c1c6bc13ad7f8066323503448e554c2695803355784b95e26d8f32bd1172dc8ce62a7a73701fc86ce3f8dc8838616cb4c3b8cadc955c551ecb570be1dc34f86b88d0bd5b0d4adf54fc0475c8039d67f782e10c8c2133612c89607f0e5fa5866dcc47919799430324408f90ee9","response_identify":"e29c740e92dd4efa994b833f5af926ef72126","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":132,"response_msg":"Account da ton tai","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:44:47,064 40 445  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 10:44:47,064 40 445  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1100,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:44:47,306 40 687  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"e10adc3949ba59abbe56e057f20f883e","session_key":"[login success session]","account_epurse_id":0}
+12-06-20 10:44:47,340 40 721  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1100,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1100,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5fe1b77a78b2bb6e34ed28697cbb7c5a1f2f4c4f5c339653299af6273297ce33ecc09068a18bdee696ca3ab757c2a108e5528822416971af26621ac9cbd3b8da803f1963b9860f233f649cfdfb78ea0008f85bc227e37e3a441780d33f4312650650b7f541c34cd1014753355feaf27b698e83f766f24d810828ba88e7e6762c6374e775dd42671bdfd26ce08c0768ce351e532240e347d1ff100cfef1bcb34595579872e539b800c17b018b50717b9696eabf1296abbc82df66b56878efc213bf080eefb5069b86ca","response_identify":"6ee5d2949c5040cfb501dd9f04688b4497126","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:44:47,348 40 729  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"*****","remain_balance":992613900,"holding_balance":7281150,"require_change_pass":0,"display_name":"Hoàng Tùng Lâm","session_key":"c2f4204756814187918d28bcad9900e5","account_epurse_id":124}
+12-06-20 10:44:47,378 40 759  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 10:44:47,378 40 759  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1800,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef9b8c5d8d0550d2be15951a8dbead6aebbb515792e3f1b590109e2fbc400b509c126f2b01a6008c4ca810a2b7efbdf84d8c2ebfbbbaed33fef3f8e8cce58d4a1a1f39413b7a2b5d99c0ed91cf2966efb6f006005d8dcc932e692c34b89d7e5455d09e9630c78a8014b95ff3a98c967d2a796a6b68f125b3a3e5bc10fb5fb7fe9b515a6eb55de4d331dbad0bd423b3950d160466749d0f9dc44645ecca32033c6dd5f5e097353bcb1bb1836e0d3e1ac29b2e7cc16b675f0cc23063b2fd372f91a4de177c8406e4065a15725a830da588e4671aff109a7e14b7","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:44:47,399 40 780  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"e10adc3949ba59abbe56e057f20f883e","newpassword":"123456789","remain_balance":992613900,"holding_balance":7281150,"require_change_pass":0,"display_name":"Hoàng Tùng Lâm","session_key":"c2f4204756814187918d28bcad9900e5","account_epurse_id":124}
+12-06-20 10:44:47,414 40 795  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - CHECK SESSION:TblAccounts [accId=124 accPhone=0908310776 accEmail=vietda@imediatech.com.vn accActivePhone=0 accActiveEmail=0 activePhoneDate=null activeEmailDate=null createdDate=2019-11-08 17:21:28.0 accIdNumber=null accIdName=Hoàng Tùng Lâm displayName=Hoàng Tùng Lâm birthday=19000101 avatar=null balance=992613900 blockBalance=7281150 balanceChain=null latestUpdate=2020-06-09 16:10:53.0 accStatus=1 latestUpdatePassword=null expirePassAt=null requireChangeExpPass=0 forceChangePass=0 forceLogin=0 accIndentify=0908310776 loginPassword=e10adc3949ba59abbe56e057f20f883e],SESSION:c2f4204756814187918d28bcad9900e5
+12-06-20 10:44:47,416 40 797  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - STORE SS=c2f4204756814187918d28bcad9900e5
+12-06-20 10:44:47,417 40 798  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - INPUT=c2f4204756814187918d28bcad9900e5
+12-06-20 10:44:47,417 40 798  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - CHECK SESSION=true
+12-06-20 10:44:47,423 40 804  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1800,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef9b8c5d8d0550d2be15951a8dbead6aebbb515792e3f1b590109e2fbc400b509c126f2b01a6008c4ca810a2b7efbdf84d8c2ebfbbbaed33fef3f8e8cce58d4a1a1f39413b7a2b5d99c0ed91cf2966efb6f006005d8dcc932e692c34b89d7e5455d09e9630c78a8014b95ff3a98c967d2a796a6b68f125b3a3e5bc10fb5fb7fe9b515a6eb55de4d331dbad0bd423b3950d160466749d0f9dc44645ecca32033c6dd5f5e097353bcb1bb1836e0d3e1ac29b2e7cc16b675f0cc23063b2fd372f91a4de177c8406e4065a15725a830da588e4671aff109a7e14b7","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1800,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5fe1b77a78b2bb6e34c7d28002d02f96d536053e147b088eeb7cd1e59b2ff96b730f3bdbe2ea4b95fef3d6f0a70e495fb5ce4b2345a59731c0ecb40bb75d073130a3d13a485c43a429a8a589d652e3cd500db146b59cab8e10b9097902e5b71c8c20d567ce88059423ea59322cc18374887a5f27a00c4edf65ac5b534d25c60c103bc172382f7ce565c95ace02711fab13597cead7f2e0bbda229a9094da1ccda32f048f77e2348b4a1ac1988c7a15d89b9c49f1e277f74535bca756c8b3ac713a4a5a8dc4a5420fce34885f2e8bfdfd3ece0e8a50ac1f93f9","response_identify":"e5dbc91f76844b86912fbf3e25cb980d93349","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:44:47,433 40 814  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 10:44:47,434 40 815  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1200,"data":"db9a4b8927348a7edb5d4e8ed86af68e53a2923221c78af1497beec8c86c59d529e69ce000e98397a4f1b667a275405fb81ac2f6de17fb8b89a979a071b2651fb24b070d06b96ceefffd351d950f6771c492a3a0305e83a168bf4626f844486cb1a640a40bd5e63df88e6cde28782337027d17d1b17805c5","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:44:47,449 40 830  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"other_system_auth_user_id":"1591933487427","login_from":2,"email":"vietda1@imediatech.com.vn","account_epurse_id":0}
+12-06-20 10:44:47,496 40 877  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1200,"data":"db9a4b8927348a7edb5d4e8ed86af68e53a2923221c78af1497beec8c86c59d529e69ce000e98397a4f1b667a275405fb81ac2f6de17fb8b89a979a071b2651fb24b070d06b96ceefffd351d950f6771c492a3a0305e83a168bf4626f844486cb1a640a40bd5e63df88e6cde28782337027d17d1b17805c5","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1200,"data":"b38d6d4c3a6e7a15e4e3b5eb306be174fffd351d950f6771c492a3a0305e83a168bf4626f844486c117d2ff333bd87239427b6d547f7cb07ba09aa478e3fd038d437f4eb7e03d3b3d17c6eb10f90fafaf1d7595183b9bad8f36552d2a61af1de7730cad7a56b236841039ceb622386de132cb85074572b807b4d4912f000590617bb800ee07f4d493c12d8804b12cdaa011da3c88882b4643766501b8f814bcbf62c5bac883facd625422b81ec6761cb01fc86ce3f8dc8838616cb4c3b8cadc9dbad0bd423b3950d160466749d0f9dc428def8b6a8c141345e47919f81a651ba95b7ded3b06ff32c6fc426680101fda13063b2fd372f91a4de177c8406e4065a361de48d7ff98e20c4a751b6e22f9e75","response_identify":"751d45904b324e9eaca851cbd8fb295d64228","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:44:47,543 40 924  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 10:44:47,543 40 924  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":2700,"data":"f0c8772cbeff3641160466749d0f9dc44645ecca32033c6dd5f5e097353bcb1bb1836e0d3e1ac29b2e7cc16b675f0cc29dfd2c0e99eadf62976843b633e10ff22977dd1fabbcba74232f3667c8a0821e70a8b537d3cc98740f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf15413b5ba6b19c279deb7e14ad1eda23c33783baba120f81dfc2d454ba5ee8ceb3042962a9df9a68","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:44:47,569 40 950  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"session_key":"c2f4204756814187918d28bcad9900e5","money_active":0,"balChangeType":0,"balChangeStatus":0,"balChangeAmount":1000,"createdBy":"0908310776"}
+12-06-20 10:44:47,577 40 958  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - CHECK SESSION:TblAccounts [accId=124 accPhone=0908310776 accEmail=vietda@imediatech.com.vn accActivePhone=0 accActiveEmail=0 activePhoneDate=null activeEmailDate=null createdDate=2019-11-08 17:21:28.0 accIdNumber=null accIdName=Hoàng Tùng Lâm displayName=Hoàng Tùng Lâm birthday=19000101 avatar=null balance=992613900 blockBalance=7281150 balanceChain=null latestUpdate=2020-06-09 16:10:53.0 accStatus=1 latestUpdatePassword=null expirePassAt=null requireChangeExpPass=0 forceChangePass=0 forceLogin=0 accIndentify=0908310776 loginPassword=e10adc3949ba59abbe56e057f20f883e],SESSION:c2f4204756814187918d28bcad9900e5
+12-06-20 10:44:47,579 40 960  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - STORE SS=c2f4204756814187918d28bcad9900e5
+12-06-20 10:44:47,579 40 960  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - INPUT=c2f4204756814187918d28bcad9900e5
+12-06-20 10:44:47,579 40 960  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - CHECK SESSION=true
+12-06-20 10:44:47,701 40 1082 [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":2700,"data":"f0c8772cbeff3641160466749d0f9dc44645ecca32033c6dd5f5e097353bcb1bb1836e0d3e1ac29b2e7cc16b675f0cc29dfd2c0e99eadf62976843b633e10ff22977dd1fabbcba74232f3667c8a0821e70a8b537d3cc98740f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf15413b5ba6b19c279deb7e14ad1eda23c33783baba120f81dfc2d454ba5ee8ceb3042962a9df9a68","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":2700,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce109e2fbc400b509c126f2b01a6008c4ca810a2b7efbdf84d8c2ebfbbbaed33fef3f8e8cce58d4a1a1f39413b7a2b5d9970b688ff08e767e9f006005d8dcc932e692c34b89d7e545561354def5784f1c27761ff1e3893a8b51ec84a14998e89e6c234357db370a4a963d1095e82f64d9d9ab77b0e6c62f484915cdf47b93555bb","response_identify":"81119d21891a4ceaae2e2027ec6c155491975","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":0,"balAfter":0,"holdingBalBefore":7281150,"holdingBalAfter":7282150}]
+12-06-20 10:45:39,485 40 230277 [http-nio-8084-exec-5] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 10:45:39,486 40 230278 [http-nio-8084-exec-5] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5fe1b77a78b2bb6e34ed28697cbb7c5a1f2f4c4f5c339653299af6273297ce33ecc09068a18bdee696ca3ab757c2a108e5528822416971af26621ac9cbd3b8da803f1963b9860f233f649cfdfb78ea0008f85bc227e37e3a441780d33f4312650650b7f541c34cd1014753355feaf27b698e83f766f24d810828ba88e7e6762c6374e775dd42671bdfd26ce08c0768ce351e532240e347d1ff100cfef1bcb34595579872e539b800c17b018b50717b9696eabf1296abbc82df66b56878efc213bf080eefb5069b86ca",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]
+12-06-20 10:45:39,506 88 230298 [http-nio-8084-exec-5] FATAL springboot.SSOBussiness  - login fatal
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.loginUserPass(SSOBussiness.java:275)
+	at springboot.Controller.handleServiceRequest(Controller.java:79)
+	at springboot.Controller.servicepost(Controller.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+12-06-20 10:45:39,519 40 230311 [http-nio-8084-exec-5] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5fe1b77a78b2bb6e34ed28697cbb7c5a1f2f4c4f5c339653299af6273297ce33ecc09068a18bdee696ca3ab757c2a108e5528822416971af26621ac9cbd3b8da803f1963b9860f233f649cfdfb78ea0008f85bc227e37e3a441780d33f4312650650b7f541c34cd1014753355feaf27b698e83f766f24d810828ba88e7e6762c6374e775dd42671bdfd26ce08c0768ce351e532240e347d1ff100cfef1bcb34595579872e539b800c17b018b50717b9696eabf1296abbc82df66b56878efc213bf080eefb5069b86ca",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]:[{"p_code":1100,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5fe1b77a78b2bb6e34ed28697cbb7c5a1f2f4c4f5c339653299af6273297ce33ecc09068a18bdee696ca3ab757c2a108e5528822416971af26621ac9cbd3b8da803f1963b9860f233f649cfdfb78ea0008f85bc227e37e3a441780d33f4312650650b7f541c34cd1014753355feaf27b698e83f766f24d810828ba88e7e6762c6374e775dd42671bdfd26ce08c0768ce351e532240e347d1ff100cfef1bcb34595579872e539b800c17b018b50717b9696eabf1296abbc82df66b56878efc213bf080eefb5069b86ca","response_identify":"ce52e1385bb74559be8d0f688a8bb40485622","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:53:58,365 40 729157 [http-nio-8084-exec-8] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 10:53:58,367 40 729159 [http-nio-8084-exec-8] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][{
+    "p_code": 3300,
+    "data": "37fed6f2d36be949baf067c02f5b3a66352b0dcfc9ad96a53a12ffe0c244c17879ef8463ac7fbac961b1d9d102856bbbfcbd714df2edd27d3bdc22563660b5b49f2f7207c51a48c648392428fc8da70110aa5eb8946c63c9ca39a5a1510b7c21b2e0a46fcf9b8891ce81a844923d93d3845159d477ad368c8b0fed74e34a464eab81415175df3cae1a0b6f4ec2492b9208b0a794cc572e9403c5c6a6e0b826b4daaed8599de46a64402c858ac5f85e38",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]
+12-06-20 10:53:58,386 40 729178 [http-nio-8084-exec-8] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={  "balChangeType": 0,  "balChangeStatus": 0,  "balChangeAmount": 101000,  "createdBy": "0985023151",  "accId": 910,  "client_request_id":202006091643581231231231335356}
+12-06-20 10:53:58,412 40 729204 [http-nio-8084-exec-8] INFO  springboot.interfaces.IMDSingleSignonAbstract  - CHECK SESSION:TblAccounts [accId=910 accPhone=0985023151 accEmail=mennt@bidv.com.vn accActivePhone=0 accActiveEmail=0 activePhoneDate=null activeEmailDate=null createdDate=2020-04-23 08:54:07.0 accIdNumber=null accIdName=null displayName=Hoa birthday=19000101 avatar=null balance=191771500 blockBalance=2487000 balanceChain=null latestUpdate=2020-06-09 17:54:19.0 accStatus=1 latestUpdatePassword=null expirePassAt=null requireChangeExpPass=0 forceChangePass=0 forceLogin=0 accIndentify=0985023151 loginPassword=4297f44b13955235245b2497399d7a93],SESSION:null
+12-06-20 10:53:58,414 40 729206 [http-nio-8084-exec-8] INFO  springboot.interfaces.IMDSingleSignonAbstract  - CHECK SESSION=false
+12-06-20 10:53:58,436 40 729228 [http-nio-8084-exec-8] INFO  springboot.hbn.home.TblAccountsHome  - TRU TIEN DOI TAC:0985023151,SO DU TRUOC:191771500,SO DU SAU:191670500,SO TIEN YC:101000
+12-06-20 10:53:58,531 40 729323 [http-nio-8084-exec-8] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][{
+    "p_code": 3300,
+    "data": "37fed6f2d36be949baf067c02f5b3a66352b0dcfc9ad96a53a12ffe0c244c17879ef8463ac7fbac961b1d9d102856bbbfcbd714df2edd27d3bdc22563660b5b49f2f7207c51a48c648392428fc8da70110aa5eb8946c63c9ca39a5a1510b7c21b2e0a46fcf9b8891ce81a844923d93d3845159d477ad368c8b0fed74e34a464eab81415175df3cae1a0b6f4ec2492b9208b0a794cc572e9403c5c6a6e0b826b4daaed8599de46a64402c858ac5f85e38",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]:[{"p_code":3300,"data":"caa052c8afc214f9346b55e467aeb9735ffbb7e5937ad8842042a044a97eacb63801d880bec016aa2d190dd25a8eb453176d89cabf66edc4e0c0a7d7f9f42c11c728102e16b7f3dee47511e91790132edf969680e5711339236d05465d91815db83e6cc83168734c6b97d5efb5a34135d9ba8db887372a297068cb63ebc3878f98731d6e958b6492faf16d0c6c18cbdbcb83989b1e3d758aee76542a2545ae748b950c5bd08e5fe9","response_identify":"75d22ee04d304326962727e728ee966026625","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":191771500,"balAfter":191670500,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:58:52,387 40 1023179 [http-nio-8084-exec-1] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 10:58:52,389 40 1023181 [http-nio-8084-exec-1] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]
+12-06-20 10:58:52,419 88 1023211 [http-nio-8084-exec-1] FATAL springboot.SSOBussiness  - login fatal
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.loginUserPass(SSOBussiness.java:275)
+	at springboot.Controller.handleServiceRequest(Controller.java:79)
+	at springboot.Controller.servicepost(Controller.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+12-06-20 10:58:52,423 40 1023215 [http-nio-8084-exec-1] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]:[{"p_code":1100,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53","response_identify":"a55e99faafbf4dfe95bb731cdf287ca340459","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 10:59:07,242 40 1038034 [http-nio-8084-exec-2] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 10:59:07,245 40 1038037 [http-nio-8084-exec-2] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]
+12-06-20 10:59:07,265 88 1038057 [http-nio-8084-exec-2] FATAL springboot.SSOBussiness  - login fatal
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.loginUserPass(SSOBussiness.java:275)
+	at springboot.Controller.handleServiceRequest(Controller.java:79)
+	at springboot.Controller.servicepost(Controller.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+12-06-20 10:59:07,268 40 1038060 [http-nio-8084-exec-2] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]:[{"p_code":1100,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53","response_identify":"1dcafb6994294fee8d232b7a7c4a8dea15084","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:02:43,555 40 0    [main] INFO  springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$c3b5bba0  - -----------_START SSO SERVER INSTANCE SUCCESS AT----------Fri Jun 12 11:02:43 ICT 2020
+12-06-20 11:02:49,576 40 6021 [http-nio-8084-exec-2] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:02:49,579 40 6024 [http-nio-8084-exec-2] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]
+12-06-20 11:03:55,968 88 72413 [http-nio-8084-exec-2] FATAL springboot.SSOBussiness  - login fatal
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.loginUserPass(SSOBussiness.java:275)
+	at springboot.Controller.handleServiceRequest(Controller.java:79)
+	at springboot.Controller.servicepost(Controller.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+12-06-20 11:03:56,002 40 72447 [http-nio-8084-exec-2] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]:[{"p_code":1100,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53","response_identify":"0002ed57692845758cf9def0a5b284fc4540","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:05:02,725 40 139170 [http-nio-8084-exec-5] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:05:02,727 40 139172 [http-nio-8084-exec-5] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]
+12-06-20 11:07:43,995 88 300440 [http-nio-8084-exec-5] FATAL springboot.SSOBussiness  - login fatal
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.loginUserPass(SSOBussiness.java:274)
+	at springboot.Controller.handleServiceRequest(Controller.java:79)
+	at springboot.Controller.servicepost(Controller.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+12-06-20 11:07:44,016 40 300461 [http-nio-8084-exec-5] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]:[{"p_code":1100,"data":"b38d6d4c3a6e7a15338bf7a7de478588dfc2d454ba5ee8ce52b9589a4bd69d5f69ea88dfdf3da61bb4c5f33ee533497d60480b73d8f2778a79090a61eef936f9a43cf3b2d4b4d7ef94ec00180aea5a5dd778588eb864cbd221e971c96561e8da7e8ff25787f8787d11f81a233f1e876284fe4fa6ce908ae38eefdaf4bd68c850b6568702e5e48b53","response_identify":"044b7adc3b97438695d592ff6dde748d41097","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:08:22,544 40 0    [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:08:22,551 40 7    [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f7389466edb8c70005e88a154f004571336c6461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaed96fc17eda0104f8cb19ea45693b0a346612604fbe41aa8c74d3eb64629bf5ee439a8abe52cccd8e0faa65c08ebea77925c23b1010b09c51d9e93f8a6d78043c859967804a61e778cfad6ed680a0dea7fc69fa6f54aebb090aadc2cada783d21c946e68cbc1c98ea","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:08:22,839 88 295  [main] FATAL springboot.SSOBussiness  - register
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.register(SSOBussiness.java:1819)
+	at springboot.Controller.handleServiceRequest(Controller.java:88)
+	at springboot.Controller.generateMessage(Controller.java:576)
+	at springboot.Controller.main(Controller.java:924)
+12-06-20 11:08:22,848 40 304  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f7389466edb8c70005e88a154f004571336c6461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaed96fc17eda0104f8cb19ea45693b0a346612604fbe41aa8c74d3eb64629bf5ee439a8abe52cccd8e0faa65c08ebea77925c23b1010b09c51d9e93f8a6d78043c859967804a61e778cfad6ed680a0dea7fc69fa6f54aebb090aadc2cada783d21c946e68cbc1c98ea","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f7389466edb8c70005e88a154f004571336c6461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaed96fc17eda0104f8cb19ea45693b0a346612604fbe41aa8c74d3eb64629bf5ee439a8abe52cccd8e0faa65c08ebea77925c23b1010b09c51d9e93f8a6d78043c859967804a61e778cfad6ed680a0dea7fc69fa6f54aebb090aadc2cada783d21c946e68cbc1c98ea","response_identify":"50ac4bb4fbc54e0a8d720e36703c4de271716","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:08:22,861 40 317  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:08:22,861 40 317  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783ffdfdff83d9dbe29805ea2f0fe2686134a5ce6ab2690a4fc563e500b03dbe3d6f5b3a128505f806f636718dbfd4edf7f44912676e0e257d7c5bae014d9b9a253","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:08:23,082 88 538  [main] FATAL springboot.SSOBussiness  - login fatal
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.loginUserPass(SSOBussiness.java:274)
+	at springboot.Controller.handleServiceRequest(Controller.java:79)
+	at springboot.Controller.generateMessage(Controller.java:609)
+	at springboot.Controller.main(Controller.java:924)
+12-06-20 11:08:23,087 40 543  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783ffdfdff83d9dbe29805ea2f0fe2686134a5ce6ab2690a4fc563e500b03dbe3d6f5b3a128505f806f636718dbfd4edf7f44912676e0e257d7c5bae014d9b9a253","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783ffdfdff83d9dbe29805ea2f0fe2686134a5ce6ab2690a4fc563e500b03dbe3d6f5b3a128505f806f636718dbfd4edf7f44912676e0e257d7c5bae014d9b9a253","response_identify":"c2ce4f72ba5f4f408b11897de68a447482293","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:08:23,097 40 553  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"e10adc3949ba59abbe56e057f20f883e","session_key":"[login success session]","account_epurse_id":0}
+12-06-20 11:08:23,109 40 565  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:08:23,110 40 566  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1800,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783143359baf5fa7dc11249adc6a286377611f2de5cf8a0200d0760c8ad9f6c85c38301c3b63f611c65918ca7d1c80f331a137233fb1d1ffe814de65b33c862f63a7b03d8e52efa7e4bb3b5df9770fd181f2f46f0c96dad5a8e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:08:23,122 88 578  [main] FATAL springboot.SSOBussiness  - getUserInfo
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.getUserInfo(SSOBussiness.java:334)
+	at springboot.Controller.handleServiceRequest(Controller.java:82)
+	at springboot.Controller.generateMessage(Controller.java:671)
+	at springboot.Controller.main(Controller.java:924)
+12-06-20 11:08:23,123 40 579  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1800,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783143359baf5fa7dc11249adc6a286377611f2de5cf8a0200d0760c8ad9f6c85c38301c3b63f611c65918ca7d1c80f331a137233fb1d1ffe814de65b33c862f63a7b03d8e52efa7e4bb3b5df9770fd181f2f46f0c96dad5a8e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1800,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783143359baf5fa7dc11249adc6a286377611f2de5cf8a0200d0760c8ad9f6c85c38301c3b63f611c65918ca7d1c80f331a137233fb1d1ffe814de65b33c862f63a7b03d8e52efa7e4bb3b5df9770fd181f2f46f0c96dad5a8e","response_identify":"fbdd6e7e825842539c4b900ee59199de46785","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:08:23,132 40 588  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:08:23,132 40 588  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1200,"data":"0a50b5e54fdcfceb2c0210fd9242f27be157e70b924d9b9c73ebea838280af65283c9a89e668cd54b8dde5dbb3868203f9f6ee6103cb806d95a4d01ffd3f7daf03041ae78aa36611d699c9024dcf4a6157631248a770427bfa19fb41738e9b66e3249f106a062acf2e6a161039c3fb7cc0a1b69138b47446","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:08:23,146 88 602  [main] FATAL springboot.SSOBussiness  - login fatal
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.loginSocial(SSOBussiness.java:1413)
+	at springboot.Controller.handleServiceRequest(Controller.java:91)
+	at springboot.Controller.generateMessage(Controller.java:703)
+	at springboot.Controller.main(Controller.java:924)
+12-06-20 11:08:23,149 40 605  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1200,"data":"0a50b5e54fdcfceb2c0210fd9242f27be157e70b924d9b9c73ebea838280af65283c9a89e668cd54b8dde5dbb3868203f9f6ee6103cb806d95a4d01ffd3f7daf03041ae78aa36611d699c9024dcf4a6157631248a770427bfa19fb41738e9b66e3249f106a062acf2e6a161039c3fb7cc0a1b69138b47446","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1200,"data":"0a50b5e54fdcfceb2c0210fd9242f27be157e70b924d9b9c73ebea838280af65283c9a89e668cd54b8dde5dbb3868203f9f6ee6103cb806d95a4d01ffd3f7daf03041ae78aa36611d699c9024dcf4a6157631248a770427bfa19fb41738e9b66e3249f106a062acf2e6a161039c3fb7cc0a1b69138b47446","response_identify":"bc9c110a6a684da9a30e6aae526c492e8667","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:08:23,162 40 618  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:08:23,162 40 618  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":2700,"data":"5105da508ce774bb8301c3b63f611c65918ca7d1c80f331a137233fb1d1ffe814de65b33c862f63ab42a6efc409942092360fc1145502dcf45f4ccf1a48bc8e404162c8b2c055509e037df65dc782c981e097159049ee62dabc06deba7efff3d3a12ffe0c244c1780577e3633d9a18e61d614188f309e907e9b0ec065fccbb2adecd64f7a8bc25652560f5769198d2a513d0cfde60da6a39","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:08:23,222 88 678  [main] FATAL springboot.SSOBussiness  - addHoldingBalance
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.addHoldingBalance(SSOBussiness.java:1904)
+	at springboot.Controller.handleServiceRequest(Controller.java:94)
+	at springboot.Controller.generateMessage(Controller.java:734)
+	at springboot.Controller.main(Controller.java:924)
+12-06-20 11:08:23,227 40 683  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":2700,"data":"5105da508ce774bb8301c3b63f611c65918ca7d1c80f331a137233fb1d1ffe814de65b33c862f63ab42a6efc409942092360fc1145502dcf45f4ccf1a48bc8e404162c8b2c055509e037df65dc782c981e097159049ee62dabc06deba7efff3d3a12ffe0c244c1780577e3633d9a18e61d614188f309e907e9b0ec065fccbb2adecd64f7a8bc25652560f5769198d2a513d0cfde60da6a39","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":2700,"data":"5105da508ce774bb8301c3b63f611c65918ca7d1c80f331a137233fb1d1ffe814de65b33c862f63ab42a6efc409942092360fc1145502dcf45f4ccf1a48bc8e404162c8b2c055509e037df65dc782c981e097159049ee62dabc06deba7efff3d3a12ffe0c244c1780577e3633d9a18e61d614188f309e907e9b0ec065fccbb2adecd64f7a8bc25652560f5769198d2a513d0cfde60da6a39","response_identify":"84ef3b2fde344957a51e793d7dde287799257","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:09:20,385 40 396830 [http-nio-8084-exec-8] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:09:20,387 40 396832 [http-nio-8084-exec-8] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783ffdfdff83d9dbe29805ea2f0fe2686134a5ce6ab2690a4fc563e500b03dbe3d6f5b3a128505f806f636718dbfd4edf7f44912676e0e257d7c5bae014d9b9a253",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]
+12-06-20 11:09:24,497 40 400942 [http-nio-8084-exec-8] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"e10adc3949ba59abbe56e057f20f883e","session_key":"[login success session]","account_epurse_id":0}
+12-06-20 11:09:24,548 40 400993 [http-nio-8084-exec-8] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783ffdfdff83d9dbe29805ea2f0fe2686134a5ce6ab2690a4fc563e500b03dbe3d6f5b3a128505f806f636718dbfd4edf7f44912676e0e257d7c5bae014d9b9a253",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]:[{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18fe612eff62bc80c1f1cb1cc2ebd1631e3d0d19816eb9edd18d40a774a815e716644a79d5ca158b3857e8075ec81169273801d880bec016aa83c24e13fcc0d21bbdf31bb5f7520a85701416b5e4851edc041c977700184003a918634c71da67c2bd19c1a9dfe774b7e3de2b06d72eb507da7a4c754323ac76fdf5c9764f0a7b7b11d6a33c0d151f01b9badab0c463767bb169b6b5233798361967dad15c3e3b814a1bfa8301c11813d0935e2cc24822e721bdb67af82c138a1004d29d6045534d907746456e4d3437","response_identify":"346f31ce889d4f44b7586a80cc70d52168670","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:12:58,079 40 0    [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:12:58,087 40 8    [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f7389466edb8c70005e88a154f004571336c6461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaed96fc17eda0104f8cb19ea45693b0a346612604fbe41aa8c74d3eb64629bf5ee439a8abe52cccd8e0faa65c08ebea77925c23b1010b09c51d9e93f8a6d78043c859967804a61e778cfad6ed680a0dea7fc69fa6f54aebb090aadc2cada783d21c946e68cbc1c98ea","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:12:58,393 88 314  [main] FATAL springboot.SSOBussiness  - register
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.register(SSOBussiness.java:1819)
+	at springboot.Controller.handleServiceRequest(Controller.java:88)
+	at springboot.Controller.generateMessage(Controller.java:577)
+	at springboot.Controller.main(Controller.java:927)
+12-06-20 11:12:58,404 40 325  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f7389466edb8c70005e88a154f004571336c6461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaed96fc17eda0104f8cb19ea45693b0a346612604fbe41aa8c74d3eb64629bf5ee439a8abe52cccd8e0faa65c08ebea77925c23b1010b09c51d9e93f8a6d78043c859967804a61e778cfad6ed680a0dea7fc69fa6f54aebb090aadc2cada783d21c946e68cbc1c98ea","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f7389466edb8c70005e88a154f004571336c6461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaed96fc17eda0104f8cb19ea45693b0a346612604fbe41aa8c74d3eb64629bf5ee439a8abe52cccd8e0faa65c08ebea77925c23b1010b09c51d9e93f8a6d78043c859967804a61e778cfad6ed680a0dea7fc69fa6f54aebb090aadc2cada783d21c946e68cbc1c98ea","response_identify":"1d3fb7e15df547fd828ab02b387b70c969059","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:12:58,425 40 346  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:12:58,425 40 346  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da06978339a62c2c304a96ba46d31beddb604d1674d3949c5a51687c4455da1c8a939704421bbc053078683fbf955e08287e758175b50f41fa70e396dfb04ca54b833a20e099cc50c5e6073045958d4d2bf010091f2c45ba514fb7e58c44a82fc48d946a1d15e0fbd132cffbb9943c990c22ff7c6b4ea4392a07e80810b6cd66a01bfb8dffb1f3a181641703402c858ac5f85e38","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:12:58,569 88 490  [main] FATAL springboot.SSOBussiness  - login fatal
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.loginUserPass(SSOBussiness.java:274)
+	at springboot.Controller.handleServiceRequest(Controller.java:79)
+	at springboot.Controller.generateMessage(Controller.java:612)
+	at springboot.Controller.main(Controller.java:927)
+12-06-20 11:12:58,571 40 492  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da06978339a62c2c304a96ba46d31beddb604d1674d3949c5a51687c4455da1c8a939704421bbc053078683fbf955e08287e758175b50f41fa70e396dfb04ca54b833a20e099cc50c5e6073045958d4d2bf010091f2c45ba514fb7e58c44a82fc48d946a1d15e0fbd132cffbb9943c990c22ff7c6b4ea4392a07e80810b6cd66a01bfb8dffb1f3a181641703402c858ac5f85e38","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da06978339a62c2c304a96ba46d31beddb604d1674d3949c5a51687c4455da1c8a939704421bbc053078683fbf955e08287e758175b50f41fa70e396dfb04ca54b833a20e099cc50c5e6073045958d4d2bf010091f2c45ba514fb7e58c44a82fc48d946a1d15e0fbd132cffbb9943c990c22ff7c6b4ea4392a07e80810b6cd66a01bfb8dffb1f3a181641703402c858ac5f85e38","response_identify":"a44f5ae3041e4d66a8fb369aa5cc8e3130667","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:12:58,574 40 495  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"e10adc3949ba59abbe56e057f20f883e","login_from":0,"client_identity_str":"8d19bea4-ed3e-47dd-a7e3-d5941585c7d5","session_key":"[login success session]","account_epurse_id":0}
+12-06-20 11:12:58,585 40 506  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:12:58,585 40 506  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1800,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783143359baf5fa7dc11249adc6a286377611f2de5cf8a0200d25c23b1010b09c51d9e93f8a6d78043c1e15fb02ed0de3c28c505afbe4fc69236822b4a530850473abe51b5ef67ded5ff6c1e56b95fe80ca48564d070be6787f5e3ad6f64340249738bafd76a139621ad7e453a3ed41349ffd45f4349e995be4ce089f9c9b6b0a5b317caad6a057245daf5081e4f03d5fda21bdb67af82c138a1004d29d6045534d03ad070d3ad8b862","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:12:58,596 88 517  [main] FATAL springboot.SSOBussiness  - getUserInfo
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.getUserInfo(SSOBussiness.java:334)
+	at springboot.Controller.handleServiceRequest(Controller.java:82)
+	at springboot.Controller.generateMessage(Controller.java:674)
+	at springboot.Controller.main(Controller.java:927)
+12-06-20 11:12:58,598 40 519  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1800,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783143359baf5fa7dc11249adc6a286377611f2de5cf8a0200d25c23b1010b09c51d9e93f8a6d78043c1e15fb02ed0de3c28c505afbe4fc69236822b4a530850473abe51b5ef67ded5ff6c1e56b95fe80ca48564d070be6787f5e3ad6f64340249738bafd76a139621ad7e453a3ed41349ffd45f4349e995be4ce089f9c9b6b0a5b317caad6a057245daf5081e4f03d5fda21bdb67af82c138a1004d29d6045534d03ad070d3ad8b862","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1800,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783143359baf5fa7dc11249adc6a286377611f2de5cf8a0200d25c23b1010b09c51d9e93f8a6d78043c1e15fb02ed0de3c28c505afbe4fc69236822b4a530850473abe51b5ef67ded5ff6c1e56b95fe80ca48564d070be6787f5e3ad6f64340249738bafd76a139621ad7e453a3ed41349ffd45f4349e995be4ce089f9c9b6b0a5b317caad6a057245daf5081e4f03d5fda21bdb67af82c138a1004d29d6045534d03ad070d3ad8b862","response_identify":"55483e23618546329e829f0615d1c0ab98798","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:12:58,609 40 530  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:12:58,609 40 530  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1200,"data":"0a50b5e54fdcfceb2c0210fd9242f27be157e70b924d9b9c73ebea838280af6570ea183828f12b4210a8a8273ba8486cf9f6ee6103cb806d95a4d01ffd3f7daf03041ae78aa36611d699c9024dcf4a6157631248a770427bfa19fb41738e9b66e3249f106a062acf2e6a161039c3fb7cc0a1b69138b47446","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:12:58,623 88 544  [main] FATAL springboot.SSOBussiness  - login fatal
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.loginSocial(SSOBussiness.java:1413)
+	at springboot.Controller.handleServiceRequest(Controller.java:91)
+	at springboot.Controller.generateMessage(Controller.java:706)
+	at springboot.Controller.main(Controller.java:927)
+12-06-20 11:12:58,626 40 547  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1200,"data":"0a50b5e54fdcfceb2c0210fd9242f27be157e70b924d9b9c73ebea838280af6570ea183828f12b4210a8a8273ba8486cf9f6ee6103cb806d95a4d01ffd3f7daf03041ae78aa36611d699c9024dcf4a6157631248a770427bfa19fb41738e9b66e3249f106a062acf2e6a161039c3fb7cc0a1b69138b47446","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1200,"data":"0a50b5e54fdcfceb2c0210fd9242f27be157e70b924d9b9c73ebea838280af6570ea183828f12b4210a8a8273ba8486cf9f6ee6103cb806d95a4d01ffd3f7daf03041ae78aa36611d699c9024dcf4a6157631248a770427bfa19fb41738e9b66e3249f106a062acf2e6a161039c3fb7cc0a1b69138b47446","response_identify":"cf258204f1c849b598ede9d2cd6c64204637","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:12:58,647 40 568  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:12:58,647 40 568  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":2700,"data":"5105da508ce774bb8301c3b63f611c65918ca7d1c80f331a137233fb1d1ffe814de65b33c862f63ab42a6efc409942092360fc1145502dcf45f4ccf1a48bc8e404162c8b2c055509e037df65dc782c981e097159049ee62dabc06deba7efff3d3a12ffe0c244c1780577e3633d9a18e61d614188f309e907e9b0ec065fccbb2adecd64f7a8bc25652560f5769198d2a513d0cfde60da6a39","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:12:58,697 88 618  [main] FATAL springboot.SSOBussiness  - addHoldingBalance
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.addHoldingBalance(SSOBussiness.java:1904)
+	at springboot.Controller.handleServiceRequest(Controller.java:94)
+	at springboot.Controller.generateMessage(Controller.java:737)
+	at springboot.Controller.main(Controller.java:927)
+12-06-20 11:12:58,698 40 619  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":2700,"data":"5105da508ce774bb8301c3b63f611c65918ca7d1c80f331a137233fb1d1ffe814de65b33c862f63ab42a6efc409942092360fc1145502dcf45f4ccf1a48bc8e404162c8b2c055509e037df65dc782c981e097159049ee62dabc06deba7efff3d3a12ffe0c244c1780577e3633d9a18e61d614188f309e907e9b0ec065fccbb2adecd64f7a8bc25652560f5769198d2a513d0cfde60da6a39","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":2700,"data":"5105da508ce774bb8301c3b63f611c65918ca7d1c80f331a137233fb1d1ffe814de65b33c862f63ab42a6efc409942092360fc1145502dcf45f4ccf1a48bc8e404162c8b2c055509e037df65dc782c981e097159049ee62dabc06deba7efff3d3a12ffe0c244c1780577e3633d9a18e61d614188f309e907e9b0ec065fccbb2adecd64f7a8bc25652560f5769198d2a513d0cfde60da6a39","response_identify":"dcf7a1e4a9b1416088b75f9727883e1512192","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:14:03,636 40 680081 [http-nio-8084-exec-1] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:14:03,637 40 680082 [http-nio-8084-exec-1] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da06978339a62c2c304a96ba46d31beddb604d1674d3949c5a51687c4455da1c8a939704421bbc053078683fbf955e08287e758175b50f41fa70e396dfb04ca54b833a20e099cc50c5e6073045958d4d2bf010091f2c45ba514fb7e58c44a82fc48d946a1d15e0fbd132cffbb9943c990c22ff7c6b4ea4392a07e80810b6cd66a01bfb8dffb1f3a181641703402c858ac5f85e38",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]
+12-06-20 11:14:06,294 40 682739 [http-nio-8084-exec-1] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"e10adc3949ba59abbe56e057f20f883e","login_from":0,"client_identity_str":"8d19bea4-ed3e-47dd-a7e3-d5941585c7d5","session_key":"[login success session]","account_epurse_id":0}
+12-06-20 11:14:06,332 40 682777 [http-nio-8084-exec-1] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da06978339a62c2c304a96ba46d31beddb604d1674d3949c5a51687c4455da1c8a939704421bbc053078683fbf955e08287e758175b50f41fa70e396dfb04ca54b833a20e099cc50c5e6073045958d4d2bf010091f2c45ba514fb7e58c44a82fc48d946a1d15e0fbd132cffbb9943c990c22ff7c6b4ea4392a07e80810b6cd66a01bfb8dffb1f3a181641703402c858ac5f85e38",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]:[{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18fe612eff62bc80c1f1cb1cc2ebd1631e3d0d19816eb9edd18d40a774a815e716644a79d5ca158b3857e8075ec81169273801d880bec016aa83c24e13fcc0d21bbdf31bb5f7520a85701416b5e4851edc041c977700184003a918634c71da67c2bd19c1a9dfe774b7e3de2b06d72eb507da7a4c754323ac76481e75989b5e7df79f16d186b40f2cf08ff9c32a8bc6d173047e150f93ba8482549ee5da52416cbe2fd02f09928968cc46e20c6126eb86c15e259d9416f354502fd38dff39f052b530bb82b61634b4d8c2b3d8c1ca994c941f1146c6a1c2e25e7ebcf6012a6a8f7c7c46956a57d000f9f57b582104db82799d28ac4e4c56cb797b03d8e52efa7e4bb3b5df9770fd181f8f06d708c5f6c8b6402c858ac5f85e38","response_identify":"cdf2cbdcf4e3434dbe382277a675ae0e80392","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 11:17:33,151 40 889596 [http-nio-8084-exec-4] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 11:17:33,153 40 889598 [http-nio-8084-exec-4] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da06978339a62c2c304a96ba46d31beddb604d1674d3949c5a51687c4455da1c8a939704421bbc053078683fbf955e08287e758175b50f41fa70e396dfb04ca54b833a20e099cc50c5e6073045958d4d2bf010091f2c45ba514fb7e58c44a82fc48d946a1d15e0fbd132cffbb9943c990c22ff7c6b4ea4392a07e80810b6cd66a01bfb8dffb1f3a181641703402c858ac5f85e38",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]
+12-06-20 11:17:33,174 40 889619 [http-nio-8084-exec-4] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"e10adc3949ba59abbe56e057f20f883e","login_from":0,"client_identity_str":"8d19bea4-ed3e-47dd-a7e3-d5941585c7d5","session_key":"[login success session]","account_epurse_id":0}
+12-06-20 11:17:33,194 40 889639 [http-nio-8084-exec-4] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][{
+    "p_code": 1100,
+    "data": "caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da06978339a62c2c304a96ba46d31beddb604d1674d3949c5a51687c4455da1c8a939704421bbc053078683fbf955e08287e758175b50f41fa70e396dfb04ca54b833a20e099cc50c5e6073045958d4d2bf010091f2c45ba514fb7e58c44a82fc48d946a1d15e0fbd132cffbb9943c990c22ff7c6b4ea4392a07e80810b6cd66a01bfb8dffb1f3a181641703402c858ac5f85e38",
+    "signature": "",
+    "service_code": "f90b20cd58124b2ab992fab896ba888e",	
+    "client_type": 3,									
+    "client_version": "1.0.0",							
+    "status": 0,
+    "response_msg": ""
+}]:[{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18fe612eff62bc80c1f1cb1cc2ebd1631e3d0d19816eb9edd18d40a774a815e716644a79d5ca158b3857e8075ec81169273801d880bec016aa83c24e13fcc0d21bbdf31bb5f7520a85701416b5e4851edc041c977700184003a918634c71da67c2bd19c1a9dfe774b7e3de2b06d72eb507da7a4c754323ac76481e75989b5e7df79f16d186b40f2cf08ff9c32a8bc6d173047e150f93ba8482549ee5da52416cbe2fd02f09928968cc46e20c6126eb86c15e259d9416f354502fd38dff39f052b530bb82b61634b4d8c2b3d8c1ca994c9417dca7ce99e48cf4e29737d1c14dcd405f4f539e62b5ec04d6a6590126908667eaf4a2be40f6f84f7b03d8e52efa7e4bb3b5df9770fd181f8f06d708c5f6c8b6402c858ac5f85e38","response_identify":"9f76be8a69d449edbc74f2ae55b0927b75723","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 13:43:27,915 40 0    [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"*****","remain_balance":992613900,"holding_balance":7282150,"require_change_pass":0,"display_name":"Hoàng Tùng Lâm","login_from":0,"client_identity_str":"8d19bea4-ed3e-47dd-a7e3-d5941585c7d5","session_key":"d2903e0387b041ce98ffc72c6d3ccc56","account_epurse_id":124}
+12-06-20 13:48:01,263 40 0    [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 13:48:01,267 40 4    [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f738e7483a4178f61c5549bb6cbf7a226dd66461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaeff61009e1c42e620cb19ea45693b0a346612604fbe41aa8c74d3eb64629bf5ee439a8abe52cccd8e0faa65c08ebea77925c23b1010b09c51d9e93f8a6d78043c859967804a61e778cfad6ed680a0dea7fc69fa6f54aebb090aadc2cada783d21c946e68cbc1c98ea","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 13:48:01,677 88 414  [main] FATAL springboot.SSOBussiness  - register
+javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164)
+	at algorithm.TripleDES.decrypt(TripleDES.java:80)
+	at springboot.SSOBussiness.register(SSOBussiness.java:1819)
+	at springboot.Controller.handleServiceRequest(Controller.java:88)
+	at springboot.Controller.generateMessage(Controller.java:577)
+	at springboot.Controller.main(Controller.java:929)
+12-06-20 13:48:01,775 40 512  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f738e7483a4178f61c5549bb6cbf7a226dd66461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaeff61009e1c42e620cb19ea45693b0a346612604fbe41aa8c74d3eb64629bf5ee439a8abe52cccd8e0faa65c08ebea77925c23b1010b09c51d9e93f8a6d78043c859967804a61e778cfad6ed680a0dea7fc69fa6f54aebb090aadc2cada783d21c946e68cbc1c98ea","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f738e7483a4178f61c5549bb6cbf7a226dd66461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaeff61009e1c42e620cb19ea45693b0a346612604fbe41aa8c74d3eb64629bf5ee439a8abe52cccd8e0faa65c08ebea77925c23b1010b09c51d9e93f8a6d78043c859967804a61e778cfad6ed680a0dea7fc69fa6f54aebb090aadc2cada783d21c946e68cbc1c98ea","response_identify":"f90a653fa41d4db3bfc3a8631ec9a1a22621","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 13:50:14,498 40 0    [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 13:50:14,502 40 4    [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f738e7483a4178f61c5549bb6cbf7a226dd66461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaeff61009e1c42e620cb19ea45693b0a346612604fbe41aa8cc63e5f729277875cdd8a5dd5a0aaf72a0fb05469bca8340243e790786dfbf22714197ecea39aa38bc9422b3734c8230eabc06deba7efff3d355785c63417d7ad9b90331016eb2d2032beb1d449c23058","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 13:50:14,831 40 333  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"account_epurse_id":0,"acc_identify":"0933045686","display_name":"Amokachi","acc_pwd":"123123","cell_phone":"0933045686","acc_email":"vietda1@imediatech.com.vn","login_from":0,"acc_status":0,"receive_notify":1}
+12-06-20 13:50:15,119 40 621  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f98acb6971f94f8cdff8648d0a027f77630435cb1b5f3f738e7483a4178f61c5549bb6cbf7a226dd66461f9a681c54c1390507e90a081375e80cb0f0ce43b10f646849c294e46b27722676c621137466d48f653fda8122e78b5a7f0950ac3ecaeff61009e1c42e620cb19ea45693b0a346612604fbe41aa8cc63e5f729277875cdd8a5dd5a0aaf72a0fb05469bca8340243e790786dfbf22714197ecea39aa38bc9422b3734c8230eabc06deba7efff3d355785c63417d7ad9b90331016eb2d2032beb1d449c23058","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1400,"data":"6c87ac2395e65e37b3b5df9770fd181f9f73b22f88f171f2e4a373a7bc55a0b497535233a407c4e5c70d4bf026d75b505a5cb863861c01ba371d79b8678b81b16eb25446a515c7b006b01e49e78f52ae802cdf13060b01b22272d5d1c2f4a02aa9f7b75740fbca37fd087138501b845252ef61d2f32fdb258e57b6a0b81fb9fd26771a441acf03f761b911eb49004b5a439a8abe52cccd8e0faa65c08ebea77925c23b1010b09c51d9e93f8a6d78043c859967804a61e778cfad6ed680a0dea7fc69fa6f54aebb090aadc2cada783d21925adc0736179e02ae77cb2af689d4fa7b42b25ba377ae6060b249b17a8ef084cb21d198736d28512fd3a2854179bd44e183570c38f80389","response_identify":"84286770fa8c436c8a1495e19d07d02967267","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 13:50:52,741 40 0    [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"account_epurse_id":973,"acc_identify":"0933045686","display_name":"Amokachi","acc_pwd":"***","cell_phone":"0933045686","acc_email":"vietda1@imediatech.com.vn","login_from":0,"acc_status":0,"receive_notify":1,"session_key":"dca3770d051c495b90b91d88171c20ad"}
+12-06-20 14:04:47,817 40 0    [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 14:04:47,826 40 9    [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da06978339a62c2c304a96ba46d31beddb604d1674d3949c5a51687c4455da1c8a93970443861a67db5b4244af7df4c55c06b446d06d079e1944a5cdaeeecaaac2a0c2adb1587c1f2ef47b4d08bd6a7f2e77dfe61f2c45ba514fb7e58c44a82fc48d946a1d15e0fbd132cffbb9943c990c22ff7c6b4ea4392a07e80810b6cd66a01bfb8dffb1f3a181641703402c858ac5f85e38","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 14:04:48,300 40 483  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"e10adc3949ba59abbe56e057f20f883e","login_from":0,"client_identity_str":"53fd7d34-117e-435b-99de-0bd1647b2134","session_key":"[login success session]","account_epurse_id":0}
+12-06-20 14:04:48,326 40 509  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da06978339a62c2c304a96ba46d31beddb604d1674d3949c5a51687c4455da1c8a93970443861a67db5b4244af7df4c55c06b446d06d079e1944a5cdaeeecaaac2a0c2adb1587c1f2ef47b4d08bd6a7f2e77dfe61f2c45ba514fb7e58c44a82fc48d946a1d15e0fbd132cffbb9943c990c22ff7c6b4ea4392a07e80810b6cd66a01bfb8dffb1f3a181641703402c858ac5f85e38","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1100,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18fe612eff62bc80c1f1cb1cc2ebd1631e3d0d19816eb9edd18d40a774a815e716644a79d5ca158b3857e8075ec81169273801d880bec016aa83c24e13fcc0d21bbdf31bb5f7520a85701416b5e4851edc041c977700184003a918634c71da67c2bd19c1a9dfe774b7e3de2b06d72eb507da7a4c754323ac76481e75989b5e7df79f16d186b40f2cf08ff9c32a8bc6d173047e150f93ba8482549ee5da52416cbed9ac301d0e98efab7e7d1ca9f579ab596bc1dce43ebd0c482989ec7fe5a8752edf5343c72e19943dc2b3d8c1ca994c94f517f4629c559b5172c271892abb4311552ddb26b1f41742df9e6ad65e25bed8fe4ecdd6f07d0ed87b03d8e52efa7e4bb3b5df9770fd181f8f06d708c5f6c8b6402c858ac5f85e38","response_identify":"7e1a520953bf46d9a5d5029b494d188d20872","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 14:04:48,333 40 516  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"*****","remain_balance":992613900,"holding_balance":7282150,"require_change_pass":0,"display_name":"Hoàng Tùng Lâm","login_from":0,"client_identity_str":"53fd7d34-117e-435b-99de-0bd1647b2134","session_key":"47ec7770010c48a995a461e6d3d4103d","account_epurse_id":124}
+12-06-20 14:04:48,362 40 545  [main] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+12-06-20 14:04:48,363 40 546  [main] INFO  springboot.Controller  - >>>>>REQUEST FROM[127.0.0.1][{"p_code":1800,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783143359baf5fa7dc11249adc6a286377611f2de5cf8a0200d589b987033c1b6eac602efa50b0aa251da423dc5c9d53d7d001edf569dc69e53582e4795783b94f704d2d560a753c3ac73b1d8d0885151b2a1e51c0e65276471309c3d71f0e6bed56bce135be18f74a494f2d2ead65b41426d44e3a275260e18e5763ad9b62505b7afb22265e09be49325c23b1010b09c51d9e93f8a6d78043c1e15fb02ed0de3c28c505afbe4fc692317f3655cbac511e10b5fc41a6950e153dd5bae585d7055510b0dce9ac153a249ea74a1936fe5555785fd8173159b583ed7e453a3ed41349f716ec2847dc3b2906f58f379cc038a07a7648cfc691b7253cd93dd8131c5a57e06f0473a4c80a616cb83989b1e3d758aee76542a2545ae74be5cbada6951dca9","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 14:04:48,379 40 562  [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"e10adc3949ba59abbe56e057f20f883e","newpassword":"123456789","remain_balance":992613900,"holding_balance":7282150,"require_change_pass":0,"display_name":"Hoàng Tùng Lâm","login_from":0,"client_identity_str":"53fd7d34-117e-435b-99de-0bd1647b2134","session_key":"47ec7770010c48a995a461e6d3d4103d","account_epurse_id":124}
+12-06-20 14:04:48,392 40 575  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - CHECK SESSION:TblAccounts [accId=124 accPhone=0908310776 accEmail=vietda@imediatech.com.vn accActivePhone=0 accActiveEmail=0 activePhoneDate=null activeEmailDate=null createdDate=2019-11-08 17:21:28.0 accIdNumber=null accIdName=Hoàng Tùng Lâm displayName=Hoàng Tùng Lâm birthday=19000101 avatar=null balance=992613900 blockBalance=7282150 balanceChain=null latestUpdate=2020-06-12 10:44:47.0 accStatus=1 latestUpdatePassword=null expirePassAt=null requireChangeExpPass=0 forceChangePass=0 forceLogin=0 accIndentify=0908310776 loginPassword=e10adc3949ba59abbe56e057f20f883e],SESSION:47ec7770010c48a995a461e6d3d4103d
+12-06-20 14:04:48,395 40 578  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - STORE SS=47ec7770010c48a995a461e6d3d4103d
+12-06-20 14:04:48,395 40 578  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - INPUT=47ec7770010c48a995a461e6d3d4103d
+12-06-20 14:04:48,396 40 579  [main] INFO  springboot.interfaces.IMDSingleSignonAbstract  - CHECK SESSION=true
+12-06-20 14:04:48,402 40 585  [main] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[127.0.0.1][{"p_code":1800,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18479b26e9f7fade88bcece616562fb633a0ea25b60533d11c6f389c7bd965ff18cc7e1173da069783143359baf5fa7dc11249adc6a286377611f2de5cf8a0200d589b987033c1b6eac602efa50b0aa251da423dc5c9d53d7d001edf569dc69e53582e4795783b94f704d2d560a753c3ac73b1d8d0885151b2a1e51c0e65276471309c3d71f0e6bed56bce135be18f74a494f2d2ead65b41426d44e3a275260e18e5763ad9b62505b7afb22265e09be49325c23b1010b09c51d9e93f8a6d78043c1e15fb02ed0de3c28c505afbe4fc692317f3655cbac511e10b5fc41a6950e153dd5bae585d7055510b0dce9ac153a249ea74a1936fe5555785fd8173159b583ed7e453a3ed41349f716ec2847dc3b2906f58f379cc038a07a7648cfc691b7253cd93dd8131c5a57e06f0473a4c80a616cb83989b1e3d758aee76542a2545ae74be5cbada6951dca9","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":0,"response_msg":"","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]:[{"p_code":1800,"data":"caa052c8afc214f9ac1baba9df39486b6ce5a61cb00a5a33f73ab7c96f0b0d18fe612eff62bc80c176811dc467acd38f345fcce2984a8a8ddfa2a145053a13819ae08c610ae7b75672ce57364aa4bb96ab0502f57eab3616216d1c79a0628093077a70edef3b61e046f7ff2bfa9ece03f2f24f2b0b9c8eeaf45e155a206b3de5d501d3806d54436b24d0cfa479b7a2327f77f7d5ff38592c5920bc5fd0052c4bedbca5563329a4f4f0a2b90a3711bdad43e790786dfbf22714197ecea39aa38b6ebc79c237bb6938a0db11d0a92945b4b30c630eee7280d90d915966d1712a72ea20c11f3eb769c50e30b4788891f113d722a221f1e2a6789f56251c367f249eb335673b2f56330029f1eef22aa4b13ba93a27f2bb19bf7f8cf1d3b66ab4f9230a2d4ea470113edebb5685968ff2cbb6c6d373e82279507f49d96a878d4ed50dad3d405953f4fb72","response_identify":"b7c4ea3c59e54c239a0d136500c241ed28220","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":3,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong","balBefore":0,"balAfter":0,"holdingBalBefore":0,"holdingBalAfter":0}]
+12-06-20 14:05:13,293 40 1    [main] INFO  algorithm.TripleDES  - DU LIEU SAU GIAI MA={"username":"0908310776","password":"*****","newpassword":"*****","remain_balance":992613900,"holding_balance":7282150,"require_change_pass":0,"display_name":"Hoàng Tùng Lâm","login_from":0,"client_identity_str":"53fd7d34-117e-435b-99de-0bd1647b2134","session_key":"*****","birthday":"19000101","account_epurse_id":124}

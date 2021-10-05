@@ -1,0 +1,380 @@
+01-11-19 14:40:07,260 40 1    [main] INFO  springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$9a9e9496  - -----------_START SSO SERVER INSTANCE SUCCESS AT----------Fri Nov 01 14:40:07 ICT 2019
+01-11-19 17:37:42,952 40 0    [main] INFO  springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$1e3e0aab  - -----------_START SSO SERVER INSTANCE SUCCESS AT----------Fri Nov 01 17:37:42 ICT 2019
+01-11-19 17:40:59,806 40 196854 [https-jsse-nio-8443-exec-8] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+01-11-19 17:40:59,811 40 196859 [https-jsse-nio-8443-exec-8] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][xxx]
+01-11-19 17:42:47,153 40 0    [main] INFO  springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$c7372019  - -----------_START SSO SERVER INSTANCE SUCCESS AT----------Fri Nov 01 17:42:47 ICT 2019
+01-11-19 17:43:00,148 40 12995 [https-jsse-nio-8443-exec-5] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+01-11-19 17:43:00,151 40 12998 [https-jsse-nio-8443-exec-5] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][xxx]
+01-11-19 17:44:32,803 40 0    [main] INFO  springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$625e90f2  - -----------_START SSO SERVER INSTANCE SUCCESS AT----------Fri Nov 01 17:44:32 ICT 2019
+01-11-19 17:44:37,970 40 5167 [https-jsse-nio-8443-exec-5] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+01-11-19 17:44:37,973 40 5170 [https-jsse-nio-8443-exec-5] INFO  springboot.Controller  - >>>>>REQUEST FROM[0:0:0:0:0:0:0:1][xxx]
+01-11-19 17:44:37,989 88 5186 [https-jsse-nio-8443-exec-5] FATAL springboot.Controller  - processFirmRequest
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
+	at com.google.gson.Gson.fromJson(Gson.java:922)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:836)
+	at com.google.gson.Gson.fromJson(Gson.java:808)
+	at springboot.utils.GsonUltilities.fromJson(GsonUltilities.java:27)
+	at springboot.Controller.handleRequest(Controller.java:63)
+	at springboot.Controller.servicepost(Controller.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
+	... 71 more
+01-11-19 17:44:38,002 40 5199 [https-jsse-nio-8443-exec-5] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[0:0:0:0:0:0:0:1][xxx]:[N/A]
+01-11-19 18:01:32,869 40 1020066 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110117594786177990002","transactionType":1,"requestAmt":1013,"createdDate":"2019/11/01 17:59:47","updatedDate":"2019/11/01 18:01:28","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0933045719","accUserName":"0933045719","simEZ":"84782496163","balBefore":"332302","balAfter":"-1","response":"BEGIN_SMS([])END_SMS"}
+01-11-19 18:01:33,185 40 1020382 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110117594786177990002","transactionType":1,"requestAmt":1013,"createdDate":"2019/11/01 17:59:47","updatedDate":"2019/11/01 18:01:28","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0933045719","accUserName":"0933045719","simEZ":"84782496163","balBefore":"332302","balAfter":"-1","response":"BEGIN_SMS([])END_SMS"}
+01-11-19 18:11:32,884 40 1620081 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110118093623592200003","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:09:36","updatedDate":"2019/11/01 18:11:01","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0933045719","accUserName":"0933045719","simEZ":"84782496163","balBefore":"332302","balAfter":"322302","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Da nap duoc 10,000 cho 933045719 vao luc 01/11/2019 18:10:48. So du moi la 322,302 dong. So giao dich: 1476175460\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:10:51+28\"}])END_SMS"}
+01-11-19 18:11:32,928 40 1620125 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110118093623592200003","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:09:36","updatedDate":"2019/11/01 18:11:01","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0933045719","accUserName":"0933045719","simEZ":"84782496163","balBefore":"332302","balAfter":"322302","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Da nap duoc 10,000 cho 933045719 vao luc 01/11/2019 18:10:48. So du moi la 322,302 dong. So giao dich: 1476175460\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:10:51+28\"}])END_SMS"}
+01-11-19 18:11:32,946 40 1620143 [Timer-1] INFO  springboot.hbn.home.TblAccountsHome  - XOA TAM GIU DOI TAC:0933045719,SO DU TRUOC:99990710783,SO DU SAU:99990720783,SO TIEN YC:10000GIAO DICH HOAN TIEN:springboot.hbn.entities.TblTransactions@6d8eae4c
+01-11-19 18:16:32,899 40 1920096 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110118144015714060005","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:14:40","updatedDate":"2019/11/01 18:16:05","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0933045719","accUserName":"0933045719","simEZ":"84782415840","balBefore":"800","balAfter":"800","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"MobiFon\",\"message\":\"Giao dich khong thanh cong. TK khong du tien.\",\"timestamp\":\"19/11/01,18:15:49+28\"},{\"id\":2,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Tai khoan khong du de giao dich. 01/11/2019 18:15:49. Ma giao dich: 1476179576\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:15:50+28\"}])END_SMS"}
+01-11-19 18:16:32,934 40 1920131 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110118144015714060005","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:14:40","updatedDate":"2019/11/01 18:16:05","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0933045719","accUserName":"0933045719","simEZ":"84782415840","balBefore":"800","balAfter":"800","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"MobiFon\",\"message\":\"Giao dich khong thanh cong. TK khong du tien.\",\"timestamp\":\"19/11/01,18:15:49+28\"},{\"id\":2,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Tai khoan khong du de giao dich. 01/11/2019 18:15:49. Ma giao dich: 1476179576\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:15:50+28\"}])END_SMS"}
+01-11-19 18:16:32,945 40 1920142 [Timer-1] INFO  springboot.hbn.home.TblAccountsHome  - HOAN TIEN DOI TAC:0933045719,SO DU TRUOC:99990688330,SO DU SAU:99990698330,SO TIEN YC:10000GIAO DICH HOAN TIEN:springboot.hbn.entities.TblTransactions@547741d5
+01-11-19 18:36:32,963 40 3120160 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110118344331010790006","transactionType":0,"requestAmt":12345,"createdDate":"2019/11/01 18:34:43","updatedDate":"2019/11/01 18:36:14","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0939838383","accUserName":"0933045719","simEZ":"84782444401","balBefore":"884","balAfter":"884","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Giao dich that bai. 01/11/2019 18:35:58. Ma giao dich: 1476198816\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:36:01+28\"}])END_SMS"}
+01-11-19 18:36:32,990 40 3120187 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110118344331010790006","transactionType":0,"requestAmt":12345,"createdDate":"2019/11/01 18:34:43","updatedDate":"2019/11/01 18:36:14","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0939838383","accUserName":"0933045719","simEZ":"84782444401","balBefore":"884","balAfter":"884","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Giao dich that bai. 01/11/2019 18:35:58. Ma giao dich: 1476198816\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:36:01+28\"}])END_SMS"}
+01-11-19 18:36:33,001 40 3120198 [Timer-1] INFO  springboot.hbn.home.TblAccountsHome  - HOAN TIEN DOI TAC:0933045719,SO DU TRUOC:99990655985,SO DU SAU:99990668330,SO TIEN YC:12345GIAO DICH HOAN TIEN:springboot.hbn.entities.TblTransactions@5dae9c7a
+01-11-19 18:37:32,966 40 3180163 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110118353121238880007","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:35:31","updatedDate":"2019/11/01 18:36:56","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0902184987","accUserName":"0933045719","simEZ":"84782455616","balBefore":"100","balAfter":"100","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Tai khoan khong du de giao dich. 01/11/2019 18:36:44. Ma giao dich: 1476199570\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:36:46+28\"}])END_SMS"}
+01-11-19 18:37:32,988 40 3180185 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110118353121238880007","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:35:31","updatedDate":"2019/11/01 18:36:56","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0902184987","accUserName":"0933045719","simEZ":"84782455616","balBefore":"100","balAfter":"100","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Tai khoan khong du de giao dich. 01/11/2019 18:36:44. Ma giao dich: 1476199570\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:36:46+28\"}])END_SMS"}
+01-11-19 18:37:32,988 40 3180185 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110118354592626380008","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:35:45","updatedDate":"2019/11/01 18:37:11","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0902468525","accUserName":"0933045719","simEZ":"84782415840","balBefore":"800","balAfter":"800","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Tai khoan khong du de giao dich. 01/11/2019 18:36:55. Ma giao dich: 1476199772\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:36:57+28\"}])END_SMS"}
+01-11-19 18:37:33,004 40 3180201 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110118354592626380008","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:35:45","updatedDate":"2019/11/01 18:37:11","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0902468525","accUserName":"0933045719","simEZ":"84782415840","balBefore":"800","balAfter":"800","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Tai khoan khong du de giao dich. 01/11/2019 18:36:55. Ma giao dich: 1476199772\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:36:57+28\"}])END_SMS"}
+01-11-19 18:37:33,005 40 3180202 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110118355764063970009","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:35:57","updatedDate":"2019/11/01 18:37:24","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0933045719","accUserName":"0933045719","simEZ":"84782496163","balBefore":"322302","balAfter":"312302","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Da nap duoc 10,000 cho 933045719 vao luc 01/11/2019 18:37:12. So du moi la 312,302 dong. So giao dich: 1476200052\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:37:13+28\"}])END_SMS"}
+01-11-19 18:37:33,021 40 3180218 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110118355764063970009","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:35:57","updatedDate":"2019/11/01 18:37:24","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0933045719","accUserName":"0933045719","simEZ":"84782496163","balBefore":"322302","balAfter":"312302","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Da nap duoc 10,000 cho 933045719 vao luc 01/11/2019 18:37:12. So du moi la 312,302 dong. So giao dich: 1476200052\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,18:37:13+28\"}])END_SMS"}
+01-11-19 18:37:33,033 40 3180230 [Timer-1] INFO  springboot.hbn.home.TblAccountsHome  - HOAN TIEN DOI TAC:0933045719,SO DU TRUOC:99990668330,SO DU SAU:99990678330,SO TIEN YC:10000GIAO DICH HOAN TIEN:springboot.hbn.entities.TblTransactions@799a0d8c
+01-11-19 18:37:33,058 40 3180255 [Timer-1] INFO  springboot.hbn.home.TblAccountsHome  - HOAN TIEN DOI TAC:0933045719,SO DU TRUOC:99990678330,SO DU SAU:99990688330,SO TIEN YC:10000GIAO DICH HOAN TIEN:springboot.hbn.entities.TblTransactions@7b89d3d4
+01-11-19 18:37:33,081 40 3180278 [Timer-1] INFO  springboot.hbn.home.TblAccountsHome  - XOA TAM GIU DOI TAC:0933045719,SO DU TRUOC:99990688330,SO DU SAU:99990698330,SO TIEN YC:10000GIAO DICH HOAN TIEN:springboot.hbn.entities.TblTransactions@22649435
+01-11-19 18:41:32,977 40 3420174 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110118381720630970010","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:38:17","updatedDate":"2019/11/01 18:40:59","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0902184987","accUserName":"0933045719","simEZ":"84782478183","balBefore":"-1","balAfter":"-1","response":"BEGIN_SMS([])END_SMS"}
+01-11-19 18:41:33,012 40 3420209 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110118381720630970010","transactionType":1,"requestAmt":10000,"createdDate":"2019/11/01 18:38:17","updatedDate":"2019/11/01 18:40:59","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0902184987","accUserName":"0933045719","simEZ":"84782478183","balBefore":"-1","balAfter":"-1","response":"BEGIN_SMS([])END_SMS"}
+01-11-19 19:08:33,022 40 5040219 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110119063965639520012","transactionType":1,"requestAmt":50000,"createdDate":"2019/11/01 19:06:39","updatedDate":"2019/11/01 19:08:06","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0902184987","accUserName":"0933045719","simEZ":"84782444401","balBefore":"884","balAfter":"884","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Tai khoan khong du de giao dich. 01/11/2019 19:07:53. Ma giao dich: 1476229060\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,19:07:54+28\"}])END_SMS"}
+01-11-19 19:08:33,050 40 5040247 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110119063965639520012","transactionType":1,"requestAmt":50000,"createdDate":"2019/11/01 19:06:39","updatedDate":"2019/11/01 19:08:06","finalStatus":99,"remark":"remark","trnFee":0,"accId":1,"targetNumber":"0902184987","accUserName":"0933045719","simEZ":"84782444401","balBefore":"884","balAfter":"884","response":"BEGIN_SMS([{\"id\":1,\"folder\":\"REC UNREAD\",\"sender\":\"+049221\",\"message\":\"Tai khoan khong du de giao dich. 01/11/2019 19:07:53. Ma giao dich: 1476229060\\r\\n\\r\\nOK\",\"timestamp\":\"19/11/01,19:07:54+28\"}])END_SMS"}
+01-11-19 19:08:33,068 40 5040265 [Timer-1] INFO  springboot.hbn.home.TblAccountsHome  - HOAN TIEN DOI TAC:0933045719,SO DU TRUOC:99990628330,SO DU SAU:99990678330,SO TIEN YC:50000GIAO DICH HOAN TIEN:springboot.hbn.entities.TblTransactions@72251082
+01-11-19 20:19:34,222 88 9301419 [Timer-1] FATAL springboot.MainBussiness  - scanTransactionToProcess
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67)
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:181)
+	at org.springframework.data.redis.connection.jedis.JedisListCommands.convertJedisAccessException(JedisListCommands.java:486)
+	at org.springframework.data.redis.connection.jedis.JedisListCommands.lPop(JedisListCommands.java:330)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.lPop(DefaultedRedisConnection.java:457)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:885)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40)
+	at redis.clients.jedis.Protocol.process(Protocol.java:151)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:259)
+	at redis.clients.jedis.BinaryJedis.lpop(BinaryJedis.java:1244)
+	at org.springframework.data.redis.connection.jedis.JedisListCommands.lPop(JedisListCommands.java:328)
+	... 5 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196)
+	... 12 more
+01-11-19 20:19:34,536 40 9301733 [Timer-1] INFO  springboot.utils.EmailProcess  - RECEIPIENT INVALIDnull
+01-11-19 20:19:34,696 40 9301893 [Timer-1] INFO  springboot.utils.EmailProcess  - dang gui email
+01-11-19 20:19:39,884 88 9307081 [Timer-1] FATAL springboot.utils.EmailProcess  - 
+javax.mail.MessagingException: Unknown SMTP host: smtp.gmail.com;
+  nested exception is:
+	java.net.UnknownHostException: smtp.gmail.com
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1959)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcess.sendEmailAlert(EmailProcess.java:266)
+	at springboot.ExceptionHandle.handleException(ExceptionHandle.java:34)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:937)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: java.net.UnknownHostException: smtp.gmail.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:299)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:208)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 12 more
+01-11-19 20:19:39,887 88 9307084 [Timer-1] FATAL springboot.MainBussiness  - scanTransactionToProcess
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:286)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:469)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:884)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:276)
+	... 5 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Network is unreachable (connect failed)
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:433)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 8 more
+Caused by: java.net.ConnectException: Network is unreachable (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 15 more
+01-11-19 20:19:39,889 40 9307086 [Timer-1] INFO  springboot.utils.EmailProcess  - RECEIPIENT INVALIDnull
+01-11-19 20:19:39,890 40 9307087 [Timer-1] INFO  springboot.utils.EmailProcess  - dang gui email
+01-11-19 20:19:44,801 88 9311998 [Timer-1] FATAL springboot.utils.EmailProcess  - 
+javax.mail.MessagingException: Unknown SMTP host: smtp.gmail.com;
+  nested exception is:
+	java.net.UnknownHostException: smtp.gmail.com
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1959)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcess.sendEmailAlert(EmailProcess.java:266)
+	at springboot.ExceptionHandle.handleException(ExceptionHandle.java:34)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:937)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: java.net.UnknownHostException: smtp.gmail.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:299)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:208)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 12 more
+01-11-19 23:15:04,594 88 19831791 [Timer-1] FATAL springboot.MainBussiness  - scanTransactionToProcess
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:286)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:469)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:884)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:276)
+	... 5 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Network is unreachable (connect failed)
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:433)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 8 more
+Caused by: java.net.ConnectException: Network is unreachable (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 15 more
+01-11-19 23:15:04,816 40 19832013 [Timer-1] INFO  springboot.utils.EmailProcess  - RECEIPIENT INVALIDnull
+01-11-19 23:15:04,837 40 19832034 [Timer-1] INFO  springboot.utils.EmailProcess  - dang gui email
+01-11-19 23:16:01,321 40 19888518 [Timer-1] INFO  springboot.utils.EmailProcess  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn,
+01-11-19 23:16:04,606 88 19891803 [Timer-1] FATAL springboot.MainBussiness  - scanTransactionToProcess
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:286)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:469)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:884)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:276)
+	... 5 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:433)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 15 more
+01-11-19 23:16:04,610 40 19891807 [Timer-1] INFO  springboot.utils.EmailProcess  - RECEIPIENT INVALIDnull
+01-11-19 23:16:04,611 40 19891808 [Timer-1] INFO  springboot.utils.EmailProcess  - dang gui email
+01-11-19 23:16:38,122 40 19925319 [Timer-1] INFO  springboot.utils.EmailProcess  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn,
+01-11-19 23:17:04,609 88 19951806 [Timer-1] FATAL springboot.MainBussiness  - scanTransactionToProcess
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:286)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:469)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:884)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:276)
+	... 5 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:433)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 15 more
+01-11-19 23:17:04,612 40 19951809 [Timer-1] INFO  springboot.utils.EmailProcess  - RECEIPIENT INVALIDnull
+01-11-19 23:17:04,615 40 19951812 [Timer-1] INFO  springboot.utils.EmailProcess  - dang gui email
+01-11-19 23:17:38,932 40 19986129 [Timer-1] INFO  springboot.utils.EmailProcess  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn,
+01-11-19 23:18:04,612 88 20011809 [Timer-1] FATAL springboot.MainBussiness  - scanTransactionToProcess
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:286)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:469)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:884)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:276)
+	... 5 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:433)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 15 more
+01-11-19 23:18:04,616 40 20011813 [Timer-1] INFO  springboot.utils.EmailProcess  - RECEIPIENT INVALIDnull
+01-11-19 23:18:04,618 40 20011815 [Timer-1] INFO  springboot.utils.EmailProcess  - dang gui email

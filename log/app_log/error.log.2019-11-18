@@ -1,0 +1,6 @@
+18-11-19 14:54:51,669 88 611  [main] FATAL springboot.MainBussiness  - getUserInfo
+java.lang.NullPointerException
+	at springboot.MainBussiness.getUserInfo(MainBussiness.java:459)
+	at springboot.Controller.handleRequest(Controller.java:91)
+	at springboot.Controller.testMobileFunction(Controller.java:308)
+	at springboot.Controller.main(Controller.java:443)

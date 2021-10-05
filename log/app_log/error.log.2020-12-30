@@ -1,0 +1,14 @@
+28-12-20 11:42:03,419 88 2542 [main] FATAL springboot.utils.EmailProcess  - 
+javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor gj1sm11969446pjb.11 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcess.sendEmailAlert(EmailProcess.java:266)
+	at springboot.sso.bussiness.NotifyBussiness.main(NotifyBussiness.java:206)

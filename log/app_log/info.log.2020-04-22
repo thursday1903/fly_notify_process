@@ -1,0 +1,3 @@
+22-04-20 17:59:12,173 40 0    [main] INFO  nh.Encript.TripleDES  - DU LIEU SAU GIAI MA={"username":"0387675992","remain_balance":575000,"holding_balance":995000,"require_change_pass":0,"birthday":"19000101","account_epurse_id":946}
+22-04-20 18:46:01,904 40 0    [main] INFO  nh.Encript.TripleDES  - DU LIEU SAU GIAI MA={"username":"0387675992","remain_balance":575000,"holding_balance":995000,"require_change_pass":0,"birthday":"19000101","account_epurse_id":946}
+22-04-20 18:51:58,936 40 0    [main] INFO  nh.Encript.TripleDES  - DU LIEU SAU GIAI MA={"balChangeType":0,"balChangeStatus":0,"balChangeAmount":25000,"createdBy":"0387675992"}

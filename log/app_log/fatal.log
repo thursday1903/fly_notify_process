@@ -1,0 +1,732 @@
+26-08-21 14:15:31,974 88 60120 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Exception reading response;
+  nested exception is:
+	java.net.SocketTimeoutException: Read timed out
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2202)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1939)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:295)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:267)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.sun.mail.util.TraceInputStream.read(TraceInputStream.java:124)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at com.sun.mail.util.LineInputStream.readLine(LineInputStream.java:89)
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2182)
+	... 9 more
+26-08-21 14:20:11,558 88 60082 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Exception reading response;
+  nested exception is:
+	java.net.SocketTimeoutException: Read timed out
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2202)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1939)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:267)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.sun.mail.util.TraceInputStream.read(TraceInputStream.java:124)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at com.sun.mail.util.LineInputStream.readLine(LineInputStream.java:89)
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2182)
+	... 9 more
+26-08-21 14:23:54,861 88 60126 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Exception reading response;
+  nested exception is:
+	java.net.SocketTimeoutException: Read timed out
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2202)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1939)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:267)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.sun.mail.util.TraceInputStream.read(TraceInputStream.java:124)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at com.sun.mail.util.LineInputStream.readLine(LineInputStream.java:89)
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2182)
+	... 9 more
+26-08-21 14:25:17,445 88 1945 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:267)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 14:28:26,916 88 60378 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54605 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54605 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1862)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:267)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54605 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54605 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	... 5 more
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54605 is not permitted to relay through this server
+550 without authentication.
+
+	... 6 more
+26-08-21 14:31:07,671 88 60085 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Exception reading response;
+  nested exception is:
+	java.net.SocketTimeoutException: Read timed out
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2202)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1939)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:295)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:267)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.sun.mail.util.TraceInputStream.read(TraceInputStream.java:124)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at com.sun.mail.util.LineInputStream.readLine(LineInputStream.java:89)
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2182)
+	... 9 more
+26-08-21 14:32:54,192 88 1273 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54864 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54864 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1862)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:267)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54864 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54864 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	... 5 more
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54864 is not permitted to relay through this server
+550 without authentication.
+
+	... 6 more
+26-08-21 14:33:19,283 88 2607 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:267)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 14:34:55,349 88 1189 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54878 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54878 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1862)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:266)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54878 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54878 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	... 5 more
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54878 is not permitted to relay through this server
+550 without authentication.
+
+	... 6 more
+26-08-21 14:35:23,980 88 1335 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54885 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54885 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1862)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:266)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54885 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54885 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	... 5 more
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:54885 is not permitted to relay through this server
+550 without authentication.
+
+	... 6 more
+26-08-21 14:36:28,255 88 20993 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:59804 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:59804 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1862)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:266)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:59804 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:59804 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	... 5 more
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:59804 is not permitted to relay through this server
+550 without authentication.
+
+	... 6 more
+26-08-21 14:37:06,070 88 2370 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:266)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 14:43:39,722 88 4224 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:266)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 14:44:35,925 88 1821 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:61796 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:61796 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1862)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:266)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:61796 is not permitted to relay through this server
+550 without authentication.
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:61796 is not permitted to relay through this server
+550 without authentication.
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	... 5 more
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Please turn on SMTP Authentication in your mail client.  (DESKTOP-94EV25N)
+550-[14.232.245.102]:61796 is not permitted to relay through this server
+550 without authentication.
+
+	... 6 more
+26-08-21 14:45:07,110 88 3848 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:266)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 14:45:40,932 88 1980 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Could not connect to SMTP host: pro51.emailserver.vn, port: 25;
+  nested exception is:
+	javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1961)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:266)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at sun.security.ssl.SSLSocketInputRecord.handleUnknownRecord(SSLSocketInputRecord.java:448)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:174)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1279)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1188)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:332)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:208)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 8 more
+26-08-21 14:46:00,224 88 1304 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Could not connect to SMTP host: pro51.emailserver.vn, port: 25;
+  nested exception is:
+	javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1961)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:266)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at sun.security.ssl.SSLSocketInputRecord.handleUnknownRecord(SSLSocketInputRecord.java:448)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:174)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1279)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1188)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:332)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:208)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 8 more
+26-08-21 14:46:50,433 88 1089 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Could not connect to SMTP host: pro51.emailserver.vn, port: 587;
+  nested exception is:
+	javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1961)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:268)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at sun.security.ssl.SSLSocketInputRecord.handleUnknownRecord(SSLSocketInputRecord.java:448)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:174)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1279)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1188)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:332)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:208)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 8 more
+26-08-21 14:47:10,951 88 1104 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Could not connect to SMTP host: pro51.emailserver.vn, port: 587;
+  nested exception is:
+	javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1961)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:268)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at sun.security.ssl.SSLSocketInputRecord.handleUnknownRecord(SSLSocketInputRecord.java:448)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:174)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1279)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1188)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:332)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:208)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 8 more
+26-08-21 14:49:15,391 88 1878 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:268)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 14:50:09,598 88 1915 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:268)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 15:08:17,400 88 1803 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:268)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:33:07,601 88 2446 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:269)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:33:38,336 88 3906 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:269)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:34:50,619 88 60108 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Exception reading response;
+  nested exception is:
+	java.net.SocketTimeoutException: Read timed out
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2202)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1939)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:269)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.sun.mail.util.TraceInputStream.read(TraceInputStream.java:124)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at com.sun.mail.util.LineInputStream.readLine(LineInputStream.java:89)
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2182)
+	... 9 more
+26-08-21 16:36:26,227 88 23489 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:269)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:38:12,288 88 60197 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Exception reading response;
+  nested exception is:
+	java.net.SocketTimeoutException: Read timed out
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2202)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1939)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:269)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.sun.mail.util.TraceInputStream.read(TraceInputStream.java:124)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at com.sun.mail.util.LineInputStream.readLine(LineInputStream.java:89)
+	at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2182)
+	... 9 more
+26-08-21 16:51:07,584 88 3025 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:51:28,558 88 4311 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:54:14,565 88 4750 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:55:30,272 88 4063 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:56:35,193 88 3375 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 16:57:32,205 88 2173 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.MessagingException: Could not connect to SMTP host: localhost, port: 465;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1961)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at java.net.Socket.connect(Socket.java:555)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:299)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:234)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 8 more
+26-08-21 16:59:13,222 88 3374 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 17:01:02,428 88 3992 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)
+26-08-21 17:21:47,293 88 4452 [main] FATAL springboot.utils.EmailProcessExchange  - 
+javax.mail.AuthenticationFailedException: 535 Incorrect authentication data
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcessExchange.sendEmailAlert(EmailProcessExchange.java:261)
+	at springboot.utils.EmailProcessExchange.main(EmailProcessExchange.java:62)

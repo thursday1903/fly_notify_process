@@ -1,0 +1,352 @@
+07-11-19 08:53:17,960 40 0    [main] INFO  springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$a04c8420  - -----------_START SSO SERVER INSTANCE SUCCESS AT----------Thu Nov 07 08:53:17 ICT 2019
+07-11-19 09:30:52,309 88 2254349 [Timer-1] FATAL springboot.MainBussiness  - scanTransactionToProcess
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67)
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:181)
+	at org.springframework.data.redis.connection.jedis.JedisListCommands.convertJedisAccessException(JedisListCommands.java:486)
+	at org.springframework.data.redis.connection.jedis.JedisListCommands.lPop(JedisListCommands.java:330)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.lPop(DefaultedRedisConnection.java:457)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:901)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40)
+	at redis.clients.jedis.Protocol.process(Protocol.java:151)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:259)
+	at redis.clients.jedis.BinaryJedis.lpop(BinaryJedis.java:1244)
+	at org.springframework.data.redis.connection.jedis.JedisListCommands.lPop(JedisListCommands.java:328)
+	... 5 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196)
+	... 12 more
+07-11-19 09:30:52,432 40 2254472 [Timer-1] INFO  springboot.utils.EmailProcess  - RECEIPIENT INVALIDnull
+07-11-19 09:30:52,472 40 2254512 [Timer-1] INFO  springboot.utils.EmailProcess  - dang gui email
+07-11-19 09:30:59,319 40 2261359 [Timer-1] INFO  springboot.utils.EmailProcess  - gui email thanh cong toi danh sach: vietda@imediatech.com.vn,
+07-11-19 11:17:24,386 88 8646426 [Timer-1] FATAL springboot.MainBussiness  - scanTransactionToProcess
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67)
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:181)
+	at org.springframework.data.redis.connection.jedis.JedisListCommands.convertJedisAccessException(JedisListCommands.java:486)
+	at org.springframework.data.redis.connection.jedis.JedisListCommands.lPop(JedisListCommands.java:330)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.lPop(DefaultedRedisConnection.java:457)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:901)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40)
+	at redis.clients.jedis.Protocol.process(Protocol.java:151)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:259)
+	at redis.clients.jedis.BinaryJedis.lpop(BinaryJedis.java:1244)
+	at org.springframework.data.redis.connection.jedis.JedisListCommands.lPop(JedisListCommands.java:328)
+	... 5 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196)
+	... 12 more
+07-11-19 11:17:24,438 40 8646478 [Timer-1] INFO  springboot.utils.EmailProcess  - RECEIPIENT INVALIDnull
+07-11-19 11:17:24,464 40 8646504 [Timer-1] INFO  springboot.utils.EmailProcess  - dang gui email
+07-11-19 11:18:05,232 88 8687272 [Timer-1] FATAL springboot.utils.EmailProcess  - 
+javax.mail.MessagingException: Unknown SMTP host: smtp.gmail.com;
+  nested exception is:
+	java.net.UnknownHostException: smtp.gmail.com
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1959)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at springboot.utils.EmailProcess.sendEmailAlert(EmailProcess.java:266)
+	at springboot.ExceptionHandle.handleException(ExceptionHandle.java:34)
+	at springboot.MainBussiness.scanQueueToUpdateDb(MainBussiness.java:953)
+	at springboot.schedule.ScheduleScanQueueToUpdateTransaction.run(ScheduleScanQueueToUpdateTransaction.java:17)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: java.net.UnknownHostException: smtp.gmail.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:299)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:208)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 12 more
+07-11-19 14:18:29,242 40 0    [main] INFO  springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$8f853511  - -----------_START SSO SERVER INSTANCE SUCCESS AT----------Thu Nov 07 14:18:29 ICT 2019
+07-11-19 14:45:47,111 40 1637869 [http-nio-8084-exec-1] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 14:45:47,118 40 1637876 [http-nio-8084-exec-1] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f95c27f141dd8c7f81dbafc2373e98316762b95e94c0fbeb204b62eafce443c99854c8823a7df955e8cae6c3a361fe5f97151695f870bc5c6a977c0d09c099a64539ceb7a6d764d6c8c4cd6dd0a6cd64763c1f4e6ee16c8ccd332f9282462144b64619001dc12e76c9fac7b144204b60e60aebc944d83eea9c5ebfee93893f7176ef02a4f0fd90d300","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 14:45:49,313 148 1640071 [http-nio-8084-exec-1] ERROR springboot.hbn.home.TblAccountsHome  - get failed
+java.lang.NumberFormatException: For input string: "null"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at springboot.hbn.home.TblBalChangeLogHome.findObjecHaveFilter(TblBalChangeLogHome.java:47)
+	at springboot.MainBussiness.approveCreditBalanceReq(MainBussiness.java:1180)
+	at springboot.Controller.handleCoreRequest(Controller.java:148)
+	at springboot.Controller.coreService(Controller.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+07-11-19 14:45:49,319 88 1640077 [http-nio-8084-exec-1] FATAL springboot.MainBussiness  - approveCreditBalanceReq
+java.lang.NumberFormatException: For input string: "null"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at springboot.hbn.home.TblBalChangeLogHome.findObjecHaveFilter(TblBalChangeLogHome.java:47)
+	at springboot.MainBussiness.approveCreditBalanceReq(MainBussiness.java:1180)
+	at springboot.Controller.handleCoreRequest(Controller.java:148)
+	at springboot.Controller.coreService(Controller.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+07-11-19 14:45:49,336 40 1640094 [http-nio-8084-exec-1] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f95c27f141dd8c7f81dbafc2373e98316762b95e94c0fbeb204b62eafce443c99854c8823a7df955e8cae6c3a361fe5f97151695f870bc5c6a977c0d09c099a64539ceb7a6d764d6c8c4cd6dd0a6cd64763c1f4e6ee16c8ccd332f9282462144b64619001dc12e76c9fac7b144204b60e60aebc944d83eea9c5ebfee93893f7176ef02a4f0fd90d300","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2900,"data":"78be172a13c767f95c27f141dd8c7f81dbafc2373e98316762b95e94c0fbeb204b62eafce443c99854c8823a7df955e8cae6c3a361fe5f97151695f870bc5c6a977c0d09c099a64539ceb7a6d764d6c8c4cd6dd0a6cd64763c1f4e6ee16c8ccd332f9282462144b64619001dc12e76c9fac7b144204b60e60aebc944d83eea9c5ebfee93893f7176ef02a4f0fd90d300","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":106,"response_msg":"He thong dang ban thu lai sau"}]
+07-11-19 14:47:49,988 40 1760746 [http-nio-8084-exec-2] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 14:47:49,989 40 1760747 [http-nio-8084-exec-2] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa799d890bf4efd7f762232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd64763c1f4e6ee16c8ccd332f9282462144b64619001dc12e76c9fac7b144204b60e60aebc944d83eea9c5ebfee93893f7176ef02a4f0fd90d300","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 14:47:50,255 40 1761013 [http-nio-8084-exec-2] INFO  springboot.hbn.home.TblAccountsHome  - CONG TIEN DOI TAC:demouser,SO DU TRUOC:55100000,SO DU SAU:55200000,SO TIEN YC:100000
+07-11-19 14:47:50,306 40 1761064 [http-nio-8084-exec-2] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa799d890bf4efd7f762232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd64763c1f4e6ee16c8ccd332f9282462144b64619001dc12e76c9fac7b144204b60e60aebc944d83eea9c5ebfee93893f7176ef02a4f0fd90d300","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa799d890bf4efd7f762232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd64763c1f4e6ee16c8ccd332f9282462144b64619001dc12e76c9fac7b144204b60e60aebc944d83eea9c5ebfee93893f7176ef02a4f0fd90d300","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 14:50:29,857 40 1920615 [http-nio-8084-exec-3] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 14:50:29,858 40 1920616 [http-nio-8084-exec-3] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa793ce1dac4c389ea74232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd64763c1f4e6ee16c8ccd332f9282462144b64619001dc12e76c9f604eb9172d187365badfb4b5b0a585fbe10f1577a7a872bb1902873b71b381504db9317cb77997034226acb5543b17b","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 14:50:29,916 40 1920674 [http-nio-8084-exec-3] INFO  springboot.hbn.home.TblAccountsHome  - CONG TIEN DOI TAC:demouser,SO DU TRUOC:55200000,SO DU SAU:55300000,SO TIEN YC:100000
+07-11-19 14:50:29,925 40 1920683 [http-nio-8084-exec-3] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa793ce1dac4c389ea74232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd64763c1f4e6ee16c8ccd332f9282462144b64619001dc12e76c9f604eb9172d187365badfb4b5b0a585fbe10f1577a7a872bb1902873b71b381504db9317cb77997034226acb5543b17b","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa793ce1dac4c389ea74232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd64763c1f4e6ee16c8ccd332f9282462144b64619001dc12e76c9f604eb9172d187365badfb4b5b0a585fbe10f1577a7a872bb1902873b71b381504db9317cb77997034226acb5543b17b","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 14:55:07,351 40 2198109 [http-nio-8084-exec-5] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 14:55:07,353 40 2198111 [http-nio-8084-exec-5] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa7952da3e7c4de361c0232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 14:55:07,437 40 2198195 [http-nio-8084-exec-5] INFO  springboot.hbn.home.TblAccountsHome  - CONG TIEN DOI TAC:demouser,SO DU TRUOC:55300000,SO DU SAU:55400000,SO TIEN YC:100000
+07-11-19 14:55:07,448 40 2198206 [http-nio-8084-exec-5] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa7952da3e7c4de361c0232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa7952da3e7c4de361c0232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 15:00:02,350 40 2493108 [http-nio-8084-exec-6] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:00:02,351 40 2493109 [http-nio-8084-exec-6] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79cf499d3caddaff59232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:00:02,420 40 2493178 [http-nio-8084-exec-6] INFO  springboot.hbn.home.TblAccountsHome  - CONG TIEN DOI TAC:demouser,SO DU TRUOC:55400000,SO DU SAU:55500000,SO TIEN YC:100000
+07-11-19 15:00:02,429 40 2493187 [http-nio-8084-exec-6] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79cf499d3caddaff59232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79cf499d3caddaff59232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 15:01:33,947 40 2584705 [http-nio-8084-exec-7] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:01:33,948 40 2584706 [http-nio-8084-exec-7] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79cf499d3caddaff59232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:01:33,993 40 2584751 [http-nio-8084-exec-7] INFO  springboot.hbn.home.TblAccountsHome  - CONG TIEN DOI TAC:demouser,SO DU TRUOC:55500000,SO DU SAU:55600000,SO TIEN YC:100000
+07-11-19 15:01:34,004 40 2584762 [http-nio-8084-exec-7] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79cf499d3caddaff59232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79cf499d3caddaff59232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 15:06:20,384 40 2871142 [http-nio-8084-exec-9] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:06:20,390 40 2871148 [http-nio-8084-exec-9] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79cf499d3caddaff59232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:06:20,484 40 2871242 [http-nio-8084-exec-9] INFO  springboot.hbn.home.TblAccountsHome  - CONG TIEN DOI TAC:demouser,SO DU TRUOC:55600000,SO DU SAU:55700000,SO TIEN YC:100000
+07-11-19 15:06:20,502 40 2871260 [http-nio-8084-exec-9] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79cf499d3caddaff59232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79cf499d3caddaff59232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 15:07:01,924 40 2912682 [http-nio-8084-exec-10] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:07:01,925 40 2912683 [http-nio-8084-exec-10] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa7952da3e7c4de361c0232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:07:01,980 40 2912738 [http-nio-8084-exec-10] INFO  springboot.hbn.home.TblAccountsHome  - CONG TIEN DOI TAC:demouser,SO DU TRUOC:55700000,SO DU SAU:55800000,SO TIEN YC:100000
+07-11-19 15:07:01,992 40 2912750 [http-nio-8084-exec-10] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa7952da3e7c4de361c0232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa7952da3e7c4de361c0232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 15:08:40,772 40 3011530 [http-nio-8084-exec-2] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:08:40,775 40 3011533 [http-nio-8084-exec-2] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79af4c9d00df870ffc232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:08:40,843 40 3011601 [http-nio-8084-exec-2] INFO  springboot.hbn.home.TblAccountsHome  - CONG TIEN DOI TAC:demouser,SO DU TRUOC:55800000,SO DU SAU:55900000,SO TIEN YC:100000
+07-11-19 15:08:40,855 40 3011613 [http-nio-8084-exec-2] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79af4c9d00df870ffc232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa79af4c9d00df870ffc232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 15:08:47,453 40 3018211 [http-nio-8084-exec-3] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:08:47,453 40 3018211 [http-nio-8084-exec-3] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa793ce1dac4c389ea74232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:08:47,515 40 3018273 [http-nio-8084-exec-3] INFO  springboot.hbn.home.TblAccountsHome  - CONG TIEN DOI TAC:demouser,SO DU TRUOC:55900000,SO DU SAU:56000000,SO TIEN YC:100000
+07-11-19 15:08:47,529 40 3018287 [http-nio-8084-exec-3] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa793ce1dac4c389ea74232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2900,"data":"78be172a13c767f9f122bddcc15eaa793ce1dac4c389ea74232f3667c8a0821e4b62eafce443c9980f31ae4ebedf7b1acae6c3a361fe5f974baec49df60efcb46264b8afe99e2cbf39ceb7a6d764d6c8c4cd6dd0a6cd6476d87e11c391b4e554e082b0dfefcd05b97b8a1458e91796ff9f936fb4fcbaeeb68bae08986714490be117ae78222f4fe2f453afe360e411cf50dfb55dccc8470f8867a9864392ad9e449818e64130cb3263e6be3936da09f3","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 15:51:07,996 40 5558754 [http-nio-8084-exec-5] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:51:08,017 40 5558775 [http-nio-8084-exec-5] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763d7c455b76fba1fa5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe139b7189a9498d2fda0aebc944d83eea9c5ebfee93893f7176e47dc3a52ddeb9194250c4afe160151b","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:51:08,162 40 5558920 [http-nio-8084-exec-5] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763d7c455b76fba1fa5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe139b7189a9498d2fda0aebc944d83eea9c5ebfee93893f7176e47dc3a52ddeb9194250c4afe160151b","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763d7c455b76fba1fa5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe139b7189a9498d2fda0aebc944d83eea9c5ebfee93893f7176e47dc3a52ddeb9194250c4afe160151b","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":125}]
+07-11-19 15:56:09,207 40 5859965 [http-nio-8084-exec-6] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:56:09,210 40 5859968 [http-nio-8084-exec-6] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763d7c455b76fba1fa5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe13b16c5487d1e44b1309d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:56:09,292 40 5860050 [http-nio-8084-exec-6] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763d7c455b76fba1fa5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe13b16c5487d1e44b1309d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763d7c455b76fba1fa5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe13b16c5487d1e44b1309d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":125}]
+07-11-19 15:56:56,333 40 5907091 [http-nio-8084-exec-7] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:56:56,334 40 5907092 [http-nio-8084-exec-7] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763c1accb34360e1665d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe13b16c5487d1e44b1309d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:56:56,395 40 5907153 [http-nio-8084-exec-7] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763c1accb34360e1665d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe13b16c5487d1e44b1309d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763c1accb34360e1665d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe13b16c5487d1e44b1309d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":125}]
+07-11-19 15:57:30,010 40 5940768 [http-nio-8084-exec-9] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:57:30,012 40 5940770 [http-nio-8084-exec-9] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c177602c49aa231a6b80c5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe1360d3283d7cc693a1c9dc94f578bb3c77219e258491c7077d6af800176c99fe9c9f7409728cbf343f09d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:57:30,062 40 5940820 [http-nio-8084-exec-9] INFO  springboot.hbn.home.TblAccountsHome  - TRU TIEN DOI TAC:demouser,SO DU TRUOC:56000000,SO DU SAU:55930000,SO TIEN YC:70000
+07-11-19 15:57:30,165 40 5940923 [http-nio-8084-exec-9] INFO  springboot.hbn.home.TblAccountsHome  - HOAN TIEN DOI TAC:0933045719,SO DU TRUOC:99992978330,SO DU SAU:99993048330,SO TIEN YC:70000GIAO DICH HOAN TIEN:TblBalChangeLog [balanceLogId=77, balChangeType=6, balChangeStatus=200, balChangeAmount=70000, balBef=99992978330, balAf=55930000, changeDate=null, latestChange=null, acceptBy=null, createdBy=sdfsadfsdf@gmail.com, requestFromIp=null, remark=sdfsadfsdf@gmail.com CHUYEN TIEN CHO ACT:0933045719 SO TIEN:70000, pwd=null, listBillType=null, expireDate=null, billFilename=null, changeDataDetail=null, targetAccount=0933045719]
+07-11-19 15:57:30,195 40 5940953 [http-nio-8084-exec-9] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c177602c49aa231a6b80c5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe1360d3283d7cc693a1c9dc94f578bb3c77219e258491c7077d6af800176c99fe9c9f7409728cbf343f09d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c177602c49aa231a6b80c5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe1360d3283d7cc693a1c9dc94f578bb3c77219e258491c7077d6af800176c99fe9c9f7409728cbf343f09d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 15:58:15,062 40 5985820 [http-nio-8084-exec-10] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 15:58:15,063 40 5985821 [http-nio-8084-exec-10] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763d7c455b76fba1fa5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe1360d3283d7cc693a1c9dc94f578bb3c77219e258491c7077d6af800176c99fe9c9f7409728cbf343f09d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 15:58:15,125 40 5985883 [http-nio-8084-exec-10] INFO  springboot.hbn.home.TblAccountsHome  - TRU TIEN DOI TAC:demouser,SO DU TRUOC:55930000,SO DU SAU:55880000,SO TIEN YC:50000
+07-11-19 15:58:15,160 40 5985918 [http-nio-8084-exec-10] INFO  springboot.hbn.home.TblAccountsHome  - HOAN TIEN DOI TAC:0933045719,SO DU TRUOC:0,SO DU SAU:50000,SO TIEN YC:50000GIAO DICH HOAN TIEN:TblBalChangeLog [balanceLogId=79, balChangeType=6, balChangeStatus=200, balChangeAmount=50000, balBef=0, balAf=55880000, changeDate=null, latestChange=null, acceptBy=null, createdBy=sdfsadfsdf@gmail.com, requestFromIp=null, remark=sdfsadfsdf@gmail.com CHUYEN TIEN CHO ACT:0933045719 SO TIEN:50000, pwd=null, listBillType=null, expireDate=null, billFilename=null, changeDataDetail=null, targetAccount=0933045719]
+07-11-19 15:58:15,185 40 5985943 [http-nio-8084-exec-10] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763d7c455b76fba1fa5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe1360d3283d7cc693a1c9dc94f578bb3c77219e258491c7077d6af800176c99fe9c9f7409728cbf343f09d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2904,"data":"b22e74d7f8a94d485bfbec77c02c8b718beed4dd40a245b7892d802f4d5db7b639d67f782e10c8c278405915117aabd6e6d07fe5e14c17763d7c455b76fba1fa5d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746106c196f797d5afe1360d3283d7cc693a1c9dc94f578bb3c77219e258491c7077d6af800176c99fe9c9f7409728cbf343f09d28d16ce34570a29a915735cd639c6916d123a87570f489b652fcf965d690e","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 16:22:36,293 40 7447051 [http-nio-8084-exec-2] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 16:22:36,301 40 7447059 [http-nio-8084-exec-2] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2902,"data":"b22e74d7f8a94d485bfbec77c02c8b71f1ffc274fdd7f523892d802f4d5db7b639d67f782e10c8c25d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746100b1733ae82662529d2d8adbdb33aa424f077e3d2c0ef1fc8e162adc54e8caf7926f99d230ed43c545631f8a957282bc5195710f712d06c97320e61fba1b770563edcf65cf4ee8fd5b4204eddbaf5a7fdcab850a2db0c4597595a07e1459993717c1b5803722420e7ca114aeacc226f1f35137f98fa0a19c14678178ef7a80ec5b3042962a9df9a68","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 16:22:36,667 40 7447425 [http-nio-8084-exec-2] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2902,"data":"b22e74d7f8a94d485bfbec77c02c8b71f1ffc274fdd7f523892d802f4d5db7b639d67f782e10c8c25d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746100b1733ae82662529d2d8adbdb33aa424f077e3d2c0ef1fc8e162adc54e8caf7926f99d230ed43c545631f8a957282bc5195710f712d06c97320e61fba1b770563edcf65cf4ee8fd5b4204eddbaf5a7fdcab850a2db0c4597595a07e1459993717c1b5803722420e7ca114aeacc226f1f35137f98fa0a19c14678178ef7a80ec5b3042962a9df9a68","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2902,"data":"b22e74d7f8a94d485bfbec77c02c8b71f1ffc274fdd7f523892d802f4d5db7b639d67f782e10c8c25d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746100b1733ae82662529d2d8adbdb33aa424f077e3d2c0ef1fc8e162adc54e8caf7926f99d230ed43c545631f8a957282bc5195710f712d06c97320e61fba1b770563edcf65cf4ee8fd5b4204eddbaf5a7fdcab850a2db0c4597595a07e1459993717c1b5803722420e7ca114aeacc226f1f35137f98fa0a19c14678178ef7a80ec5b3042962a9df9a68","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 16:24:12,957 40 7543715 [http-nio-8084-exec-3] INFO  springboot.Controller  - ------------------------------------------------------------------------------------------------------------------------------------
+07-11-19 16:24:12,958 40 7543716 [http-nio-8084-exec-3] INFO  springboot.Controller  - >>>>>REQUEST FROM[192.168.0.112][{"p_code":2903,"data":"b22e74d7f8a94d485bfbec77c02c8b71f1ffc274fdd7f523892d802f4d5db7b639d67f782e10c8c25d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746100b1733ae82662529d2d8adbdb33aa424f077e3d2c0ef1fc8e162adc54e8caf7926f99d230ed43c545631f8a957282bc5195710f712d06c97320e61fba1b770563edcf65cf4ee8fd5b4204eddbaf5a7fdcab850a2db0c4597595a07e1459993717c1b5803722420e7ca114aeacc226f1f35137f98fa0a19c14678178ef7a80ec5b3042962a9df9a68","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]
+07-11-19 16:24:13,086 40 7543844 [http-nio-8084-exec-3] INFO  springboot.Controller  - <<<<<<REQUEST RESPONSE[192.168.0.112][{"p_code":2903,"data":"b22e74d7f8a94d485bfbec77c02c8b71f1ffc274fdd7f523892d802f4d5db7b639d67f782e10c8c25d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746100b1733ae82662529d2d8adbdb33aa424f077e3d2c0ef1fc8e162adc54e8caf7926f99d230ed43c545631f8a957282bc5195710f712d06c97320e61fba1b770563edcf65cf4ee8fd5b4204eddbaf5a7fdcab850a2db0c4597595a07e1459993717c1b5803722420e7ca114aeacc226f1f35137f98fa0a19c14678178ef7a80ec5b3042962a9df9a68","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":0,"response_msg":""}]:[{"p_code":2903,"data":"b22e74d7f8a94d485bfbec77c02c8b71f1ffc274fdd7f523892d802f4d5db7b639d67f782e10c8c25d07badcf52e21695fa8caf2ff9aa902d27a147a3b6bb04e1c26c2acf22746100b1733ae82662529d2d8adbdb33aa424f077e3d2c0ef1fc8e162adc54e8caf7926f99d230ed43c545631f8a957282bc5195710f712d06c97320e61fba1b770563edcf65cf4ee8fd5b4204eddbaf5a7fdcab850a2db0c4597595a07e1459993717c1b5803722420e7ca114aeacc226f1f35137f98fa0a19c14678178ef7a80ec5b3042962a9df9a68","signature":"","service_code":"f90b20cd58124b2ab992fab896ba888e","client_type":2,"client_version":"1.0.0","status":200,"response_msg":"Thanh cong"}]
+07-11-19 20:21:55,690 40 0    [main] INFO  springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$8f853511  - -----------_START SSO SERVER INSTANCE SUCCESS AT----------Thu Nov 07 20:21:55 ICT 2019
+07-11-19 20:21:55,714 88 24   [main] FATAL springboot.utils.Commons  - LOAD CLASS FAIL[springboot.schedule.scanBillingPendingToProcess]
+java.lang.ClassNotFoundException: springboot.schedule.scanBillingPendingToProcess
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at springboot.utils.Commons.loadClassByName(Commons.java:38)
+	at springboot.main.MainAppSSO.lambda$commandLineRunner$0(MainAppSSO.java:192)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at springboot.main.MainAppSSO.main(MainAppSSO.java:107)
+07-11-19 20:21:55,720 88 30   [main] FATAL springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$8f853511  - LOAD TASK springboot.schedule.scanBillingPendingToProcess,0,60000 FAIL
+java.lang.NullPointerException
+	at java.util.Timer.sched(Timer.java:399)
+	at java.util.Timer.schedule(Timer.java:287)
+	at springboot.schedule.TaskManager.addTask(TaskManager.java:29)
+	at springboot.main.MainAppSSO.lambda$commandLineRunner$0(MainAppSSO.java:193)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at springboot.main.MainAppSSO.main(MainAppSSO.java:107)
+07-11-19 20:22:59,880 40 0    [main] INFO  springboot.main.MainAppSSO$$EnhancerBySpringCGLIB$$2f2cb087  - -----------_START SSO SERVER INSTANCE SUCCESS AT----------Thu Nov 07 20:22:59 ICT 2019
+07-11-19 20:24:59,904 40 120024 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"201911072023003321670000","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:00","updatedDate":"2019/11/07 20:24:05","finalStatus":99,"remark":"NAP THEO FILE:axaxaxax","trnFee":0,"accId":-100,"targetNumber":"0934567890","accUserName":"sdfsadfsdf@gmail.com","simEZ":"84782445993","balBefore":"500","balAfter":"-1","response":""}
+07-11-19 20:25:00,058 40 120178 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"201911072023003321670000","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:00","updatedDate":"2019/11/07 20:24:05","finalStatus":99,"remark":"NAP THEO FILE:axaxaxax","trnFee":0,"accId":-100,"targetNumber":"0934567890","accUserName":"sdfsadfsdf@gmail.com","simEZ":"84782445993","balBefore":"500","balAfter":"-1","response":""}
+07-11-19 20:25:00,060 40 120180 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"201911072023004964300002","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:00","updatedDate":"2019/11/07 20:24:06","finalStatus":99,"remark":"NAP THEO FILE:axaxaxax","trnFee":0,"accId":-100,"targetNumber":"0934567892","accUserName":"sdfsadfsdf@gmail.com","simEZ":"84782455616","balBefore":"100","balAfter":"-1","response":""}
+07-11-19 20:25:00,083 40 120203 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"201911072023004964300002","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:00","updatedDate":"2019/11/07 20:24:06","finalStatus":99,"remark":"NAP THEO FILE:axaxaxax","trnFee":0,"accId":-100,"targetNumber":"0934567892","accUserName":"sdfsadfsdf@gmail.com","simEZ":"84782455616","balBefore":"100","balAfter":"-1","response":""}
+07-11-19 20:25:00,084 40 120204 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110720230052114210003","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:00","updatedDate":"2019/11/07 20:24:06","finalStatus":99,"remark":"NAP THEO FILE:axaxaxax","trnFee":0,"accId":-100,"targetNumber":"0934567893","accUserName":"sdfsadfsdf@gmail.com","simEZ":"84782496163","balBefore":"312302","balAfter":"-1","response":""}
+07-11-19 20:25:00,100 40 120220 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110720230052114210003","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:00","updatedDate":"2019/11/07 20:24:06","finalStatus":99,"remark":"NAP THEO FILE:axaxaxax","trnFee":0,"accId":-100,"targetNumber":"0934567893","accUserName":"sdfsadfsdf@gmail.com","simEZ":"84782496163","balBefore":"312302","balAfter":"-1","response":""}
+07-11-19 20:25:00,101 40 120221 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110720230043823880001","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:00","updatedDate":"2019/11/07 20:24:06","finalStatus":99,"remark":"NAP THEO FILE:axaxaxax","trnFee":0,"accId":-100,"targetNumber":"0934567891","accUserName":"sdfsadfsdf@gmail.com","simEZ":"84782415840","balBefore":"800","balAfter":"-1","response":""}
+07-11-19 20:25:00,116 40 120236 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110720230043823880001","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:00","updatedDate":"2019/11/07 20:24:06","finalStatus":99,"remark":"NAP THEO FILE:axaxaxax","trnFee":0,"accId":-100,"targetNumber":"0934567891","accUserName":"sdfsadfsdf@gmail.com","simEZ":"84782415840","balBefore":"800","balAfter":"-1","response":""}
+07-11-19 20:25:00,118 40 120238 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110720230055474480004","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:00","updatedDate":"2019/11/07 20:24:07","finalStatus":99,"remark":"NAP THEO FILE:axaxaxax","trnFee":0,"accId":-100,"targetNumber":"0934567894","accUserName":"sdfsadfsdf@gmail.com","simEZ":"84782444401","balBefore":"884","balAfter":"-1","response":""}
+07-11-19 20:25:00,133 40 120253 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110720230055474480004","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:00","updatedDate":"2019/11/07 20:24:07","finalStatus":99,"remark":"NAP THEO FILE:axaxaxax","trnFee":0,"accId":-100,"targetNumber":"0934567894","accUserName":"sdfsadfsdf@gmail.com","simEZ":"84782444401","balBefore":"884","balAfter":"-1","response":""}
+07-11-19 20:25:59,908 40 180028 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110720235991141240005","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:59","updatedDate":"2019/11/07 20:25:04","finalStatus":99,"remark":"NAP THEO FILE:BILLS_TEMPLATE.xlsx","trnFee":0,"accId":-100,"targetNumber":"0934567895","accUserName":"demo1@gmail.com","simEZ":"84782479854","balBefore":"500","balAfter":"-1","response":""}
+07-11-19 20:25:59,939 40 180059 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110720235991141240005","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:59","updatedDate":"2019/11/07 20:25:04","finalStatus":99,"remark":"NAP THEO FILE:BILLS_TEMPLATE.xlsx","trnFee":0,"accId":-100,"targetNumber":"0934567895","accUserName":"demo1@gmail.com","simEZ":"84782479854","balBefore":"500","balAfter":"-1","response":""}
+07-11-19 20:25:59,941 40 180061 [Timer-1] INFO  springboot.MainBussiness  - GIAO DICH PHAN HOI TU AGENT:{"requestId":"2019110720235993646520006","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:59","updatedDate":"2019/11/07 20:25:14","finalStatus":99,"remark":"NAP THEO FILE:BILLS_TEMPLATE.xlsx","trnFee":0,"accId":-100,"targetNumber":"0934567896","accUserName":"demo1@gmail.com","simEZ":"84782445993","balBefore":"-1","balAfter":"-1","response":""}
+07-11-19 20:25:59,973 40 180093 [Timer-1] INFO  springboot.MainBussiness  - CAP NHAT DB SUCCESS:{"requestId":"2019110720235993646520006","transactionType":0,"requestAmt":0,"createdDate":"2019/11/07 20:23:59","updatedDate":"2019/11/07 20:25:14","finalStatus":99,"remark":"NAP THEO FILE:BILLS_TEMPLATE.xlsx","trnFee":0,"accId":-100,"targetNumber":"0934567896","accUserName":"demo1@gmail.com","simEZ":"84782445993","balBefore":"-1","balAfter":"-1","response":""}

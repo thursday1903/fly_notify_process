@@ -1,0 +1,5 @@
+23-10-19 19:57:09,132 88 715  [main] FATAL springboot.MainBussiness  - login fatal
+java.lang.ClassCastException: springboot.hbn.entities.TblTransactions cannot be cast to springboot.hbn.entities.TblBills
+	at springboot.MainBussiness.paymentQueryTargetBilling(MainBussiness.java:493)
+	at springboot.Controller.handleRequest(Controller.java:77)
+	at springboot.Controller.main(Controller.java:194)
